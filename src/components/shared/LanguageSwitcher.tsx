@@ -23,7 +23,7 @@ export function LanguageSwitcher({ compact = false, className = '' }: LanguageSw
         className={`px-2 py-1 rounded-full text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10 transition-colors ${className}`}
         aria-label={currentIsEn ? 'Switch to French' : 'Passer en anglais'}
       >
-        {currentIsEn ? '🇫🇷 FR' : '🇬🇧 EN'}
+        {currentIsEn ? '🇬🇧 EN' : '🇫🇷 FR'}
       </button>
     );
   }
