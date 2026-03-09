@@ -113,7 +113,7 @@ export default function VowelsPage() {
                       </Badge>
                     </div>
 
-                    <AudioPlayer src={v.audioFile} size="sm" />
+                    <AudioPlayer src={v.audioFile} laoText={v.exampleWord || v.symbol} size="sm" />
 
                     <div className="mt-3 pt-3 border-t border-white/10">
                       <p className="font-lao text-lg">{v.exampleWord}</p>

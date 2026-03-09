@@ -75,7 +75,7 @@ export default function TonesPage() {
                     </h3>
                     <p className="font-lao text-sm text-muted">{tone.nameLao}</p>
                   </div>
-                  <AudioPlayer src={tone.audioExample} size="sm" />
+                  <AudioPlayer src={tone.audioExample} laoText={tone.nameLao} size="sm" />
                 </div>
 
                 <div className="flex items-center gap-4 mb-3">

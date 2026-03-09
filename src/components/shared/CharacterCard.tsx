@@ -67,7 +67,7 @@ export function CharacterCard({
         )}
 
         <div className="flex items-center justify-center gap-2 mb-2">
-          <AudioPlayer src={audioFile} size="sm" />
+          <AudioPlayer src={audioFile} laoText={exampleWord || character} size="sm" />
         </div>
 
         {exampleWord && (

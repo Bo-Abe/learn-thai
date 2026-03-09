@@ -236,6 +236,9 @@ export default function FlashcardsPage() {
               front={mode === 'consonants' ? renderConsonantFront() : renderVocabFront()}
               back={mode === 'consonants' ? renderConsonantBack() : renderVocabBack()}
               audioFile={'audioFile' in currentItem ? currentItem.audioFile : undefined}
+              laoText={mode === 'consonants'
+                ? (currentItem as typeof consonants[0]).exampleWord || (currentItem as typeof consonants[0]).character
+                : (currentItem as typeof vocabulary[0]).lao}
               className="mb-6"
             />
           </motion.div>

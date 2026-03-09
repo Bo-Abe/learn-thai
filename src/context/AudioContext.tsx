@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useReducer, useCallback, useEffect, useRef, type ReactNode } from 'react';
 
 type AudioSpeed = 0.75 | 1 | 1.25;
 
@@ -7,16 +7,20 @@ interface AudioState {
   currentFile: string | null;
   speed: AudioSpeed;
   autoplay: boolean;
+  speechSupported: boolean;
+  laoVoiceAvailable: boolean;
 }
 
 type AudioAction =
   | { type: 'PLAY'; payload: string }
   | { type: 'STOP' }
   | { type: 'SET_SPEED'; payload: AudioSpeed }
-  | { type: 'TOGGLE_AUTOPLAY' };
+  | { type: 'TOGGLE_AUTOPLAY' }
+  | { type: 'SET_SPEECH_SUPPORT'; payload: { speechSupported: boolean; laoVoiceAvailable: boolean } };
 
 interface AudioContextType extends AudioState {
   play: (file: string) => void;
+  speak: (text: string) => void;
   stop: () => void;
   setSpeed: (speed: AudioSpeed) => void;
   toggleAutoplay: () => void;
@@ -36,9 +40,21 @@ function audioReducer(state: AudioState, action: AudioAction): AudioState {
       return { ...state, speed: action.payload };
     case 'TOGGLE_AUTOPLAY':
       return { ...state, autoplay: !state.autoplay };
+    case 'SET_SPEECH_SUPPORT':
+      return { ...state, ...action.payload };
     default:
       return state;
   }
+}
+
+function findLaoVoice(): SpeechSynthesisVoice | null {
+  if (typeof speechSynthesis === 'undefined') return null;
+  const voices = speechSynthesis.getVoices();
+  const laoVoice = voices.find((v) => v.lang.startsWith('lo'));
+  if (laoVoice) return laoVoice;
+  // Thai is closely related and may pronounce Lao text acceptably
+  const thaiVoice = voices.find((v) => v.lang.startsWith('th'));
+  return thaiVoice || null;
 }
 
 export function AudioProvider({ children }: { children: ReactNode }) {
@@ -47,7 +63,32 @@ export function AudioProvider({ children }: { children: ReactNode }) {
     currentFile: null,
     speed: 1,
     autoplay: false,
+    speechSupported: false,
+    laoVoiceAvailable: false,
   });
+
+  const speedRef = useRef(state.speed);
+  speedRef.current = state.speed;
+
+  // Detect speech synthesis support and available voices
+  useEffect(() => {
+    if (typeof speechSynthesis === 'undefined') {
+      dispatch({ type: 'SET_SPEECH_SUPPORT', payload: { speechSupported: false, laoVoiceAvailable: false } });
+      return;
+    }
+
+    const checkVoices = () => {
+      const voice = findLaoVoice();
+      dispatch({
+        type: 'SET_SPEECH_SUPPORT',
+        payload: { speechSupported: true, laoVoiceAvailable: !!voice },
+      });
+    };
+
+    checkVoices();
+    speechSynthesis.addEventListener('voiceschanged', checkVoices);
+    return () => speechSynthesis.removeEventListener('voiceschanged', checkVoices);
+  }, []);
 
   const stop = useCallback(() => {
     if (currentAudio) {
@@ -55,34 +96,50 @@ export function AudioProvider({ children }: { children: ReactNode }) {
       currentAudio.currentTime = 0;
       currentAudio = null;
     }
+    if (typeof speechSynthesis !== 'undefined') {
+      speechSynthesis.cancel();
+    }
     dispatch({ type: 'STOP' });
   }, []);
+
+  const speak = useCallback(
+    (text: string) => {
+      stop();
+
+      if (typeof speechSynthesis === 'undefined') {
+        dispatch({ type: 'STOP' });
+        return;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      const voice = findLaoVoice();
+      if (voice) {
+        utterance.voice = voice;
+        utterance.lang = voice.lang;
+      } else {
+        utterance.lang = 'lo-LA';
+      }
+      utterance.rate = speedRef.current;
+
+      utterance.onend = () => dispatch({ type: 'STOP' });
+      utterance.onerror = () => dispatch({ type: 'STOP' });
+
+      dispatch({ type: 'PLAY', payload: text });
+      speechSynthesis.speak(utterance);
+    },
+    [stop],
+  );
 
   const play = useCallback(
     (file: string) => {
       stop();
 
-      // Audio files are placeholders — use Web Audio API with a generated tone
-      // In production, replace with actual .mp3 files from Google TTS or Forvo
       try {
         const audio = new Audio(file);
-        audio.playbackRate = state.speed;
+        audio.playbackRate = speedRef.current;
         audio.addEventListener('ended', () => dispatch({ type: 'STOP' }));
         audio.addEventListener('error', () => {
-          // Fallback: generate a short beep to indicate audio would play here
-          const ctx = new AudioContext();
-          const oscillator = ctx.createOscillator();
-          const gain = ctx.createGain();
-          oscillator.connect(gain);
-          gain.connect(ctx.destination);
-          oscillator.frequency.value = 440;
-          gain.gain.value = 0.1;
-          oscillator.start();
-          setTimeout(() => {
-            oscillator.stop();
-            ctx.close();
-            dispatch({ type: 'STOP' });
-          }, 200);
+          dispatch({ type: 'STOP' });
         });
         audio.play().catch(() => {
           dispatch({ type: 'STOP' });
@@ -93,7 +150,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
         dispatch({ type: 'STOP' });
       }
     },
-    [state.speed, stop],
+    [stop],
   );
 
   const setSpeed = useCallback((speed: AudioSpeed) => {
@@ -106,7 +163,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <AudioCtx.Provider value={{ ...state, play, stop, setSpeed, toggleAutoplay }}>
+    <AudioCtx.Provider value={{ ...state, play, speak, stop, setSpeed, toggleAutoplay }}>
       {children}
     </AudioCtx.Provider>
   );

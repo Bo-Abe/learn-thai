@@ -21,6 +21,7 @@ interface Question {
   id: string;
   prompt: string;
   promptAudio?: string;
+  promptLaoText?: string;
   correctAnswer: string;
   options: string[];
   explanation: string;
@@ -61,6 +62,7 @@ function generateListeningQuestions(count: number): Question[] {
       id: c.id,
       prompt: c.romanization,
       promptAudio: c.audioFile,
+      promptLaoText: c.exampleWord || c.character,
       correctAnswer: c.character,
       options: shuffleArray([c.character, ...wrongOptions]),
       explanation: `${c.romanization} → ${c.character}`,
@@ -248,7 +250,7 @@ export default function QuizPage() {
                 <div className="text-center mb-8">
                   {quizType === 'listening' && currentQuestion.promptAudio && (
                     <div className="mb-4">
-                      <AudioPlayer src={currentQuestion.promptAudio} size="lg" />
+                      <AudioPlayer src={currentQuestion.promptAudio} laoText={currentQuestion.promptLaoText} size="lg" />
                     </div>
                   )}
                   <p className="font-lao text-5xl text-primary mb-2">{currentQuestion.prompt}</p>

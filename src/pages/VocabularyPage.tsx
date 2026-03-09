@@ -154,7 +154,7 @@ export default function VocabularyPage() {
                     <p className="text-xl mb-2">
                       {isFr ? currentCard.translationFr : currentCard.translationEn}
                     </p>
-                    <AudioPlayer src={currentCard.audioFile} size="sm" />
+                    <AudioPlayer src={currentCard.audioFile} laoText={currentCard.lao} size="sm" />
                     {currentCard.sentence && (
                       <div className="mt-3 pt-3 border-t border-white/10 text-sm">
                         <p className="font-lao">{currentCard.sentence.lao}</p>
@@ -225,7 +225,7 @@ export default function VocabularyPage() {
                             </Badge>
                           </div>
                         </div>
-                        <AudioPlayer src={word.audioFile} size="sm" />
+                        <AudioPlayer src={word.audioFile} laoText={word.lao} size="sm" />
                       </Card>
                     </motion.div>
                   ))}

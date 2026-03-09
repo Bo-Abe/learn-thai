@@ -7,13 +7,14 @@ interface FlashcardProps {
   front: React.ReactNode;
   back: React.ReactNode;
   audioFile?: string;
+  laoText?: string;
   onFlip?: (isFlipped: boolean) => void;
   className?: string;
 }
 
-export function Flashcard({ front, back, audioFile, onFlip, className = '' }: FlashcardProps) {
+export function Flashcard({ front, back, audioFile, laoText, onFlip, className = '' }: FlashcardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
-  const { play: playAudio } = useAudio();
+  const { play: playAudio, speak } = useAudio();
 
   const handleFlip = useCallback(() => {
     const next = !isFlipped;
@@ -24,10 +25,16 @@ export function Flashcard({ front, back, audioFile, onFlip, className = '' }: Fl
   const handleAudio = useCallback(
     (e: React.MouseEvent) => {
       e.stopPropagation();
-      if (audioFile) playAudio(audioFile);
+      if (laoText) {
+        speak(laoText);
+      } else if (audioFile) {
+        playAudio(audioFile);
+      }
     },
-    [audioFile, playAudio],
+    [laoText, audioFile, speak, playAudio],
   );
+
+  const hasAudio = !!(laoText || audioFile);
 
   return (
     <div className={`perspective-[1000px] ${className}`} style={{ perspective: '1000px' }}>
@@ -46,7 +53,7 @@ export function Flashcard({ front, back, audioFile, onFlip, className = '' }: Fl
           <div className="dark:glass-dark glass-light rounded-2xl border border-white/10 p-8 min-h-[280px] flex flex-col items-center justify-center">
             {front}
             <div className="flex items-center gap-3 mt-6">
-              {audioFile && (
+              {hasAudio && (
                 <button
                   onClick={handleAudio}
                   className="p-2 rounded-full bg-primary/20 hover:bg-primary/30 transition-colors"
@@ -74,7 +81,7 @@ export function Flashcard({ front, back, audioFile, onFlip, className = '' }: Fl
           <div className="dark:glass-dark glass-light rounded-2xl border border-primary/20 p-8 min-h-[280px] flex flex-col items-center justify-center">
             {back}
             <div className="flex items-center gap-3 mt-6">
-              {audioFile && (
+              {hasAudio && (
                 <button
                   onClick={handleAudio}
                   className="p-2 rounded-full bg-primary/20 hover:bg-primary/30 transition-colors"
