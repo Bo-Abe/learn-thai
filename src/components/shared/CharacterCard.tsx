@@ -71,7 +71,7 @@ export function CharacterCard({
         </div>
 
         {exampleWord && (
-          <div className="mt-3 pt-3 border-t border-white/10">
+          <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10">
             <p className="font-lao text-lg">{exampleWord}</p>
             <p className="text-xs text-muted">{exampleTranslation}</p>
           </div>

@@ -44,8 +44,8 @@ export function AudioPlayer({ src, laoText, size = 'md', className = '' }: Audio
       className={`
         rounded-full transition-all duration-200
         ${isCurrentlyPlaying
-          ? 'bg-primary text-bg-dark shadow-gold'
-          : 'bg-primary/20 text-primary hover:bg-primary/30'
+          ? 'bg-primary text-white shadow-blue'
+          : 'bg-primary/10 text-primary hover:bg-primary/20'
         }
         ${buttonSizeMap[size]}
         ${className}

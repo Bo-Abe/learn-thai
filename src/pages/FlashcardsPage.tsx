@@ -2,7 +2,7 @@ import { useState, useMemo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Shuffle, Check, RotateCcw, BookOpen, Languages } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Shuffle, Check, BookOpen, Languages } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { Card } from '@/components/ui/Card';
@@ -103,7 +103,7 @@ export default function FlashcardsPage() {
           {c.class} class
         </Badge>
         {c.exampleWord && (
-          <div className="mt-3 pt-3 border-t border-white/10">
+          <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10">
             <p className="font-lao text-lg">{c.exampleWord}</p>
             <p className="text-xs text-muted">
               {lang === 'fr' ? c.exampleTranslationFr : c.exampleTranslationEn}
@@ -137,7 +137,7 @@ export default function FlashcardsPage() {
           {categoryIcons[w.category] || ''} {w.category}
         </Badge>
         {w.sentence && (
-          <div className="mt-3 pt-3 border-t border-white/10 text-sm">
+          <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10 text-sm">
             <p className="font-lao">{w.sentence.lao}</p>
             <p className="text-muted">
               {lang === 'fr' ? w.sentence.translationFr : w.sentence.translationEn}
@@ -190,7 +190,7 @@ export default function FlashcardsPage() {
               className={`px-3 py-1 rounded-full text-sm transition-colors ${
                 vocabCategory === 'all'
                   ? 'bg-primary text-white'
-                  : 'bg-white/10 text-muted hover:bg-white/20'
+                  : 'bg-black/5 dark:bg-white/10 text-muted hover:bg-black/10 dark:hover:bg-white/20'
               }`}
             >
               {lang === 'fr' ? 'Tout' : 'All'}
@@ -202,7 +202,7 @@ export default function FlashcardsPage() {
                 className={`px-3 py-1 rounded-full text-sm transition-colors ${
                   vocabCategory === cat
                     ? 'bg-primary text-white'
-                    : 'bg-white/10 text-muted hover:bg-white/20'
+                    : 'bg-black/5 dark:bg-white/10 text-muted hover:bg-black/10 dark:hover:bg-white/20'
                 }`}
               >
                 {categoryIcons[cat]} {cat}

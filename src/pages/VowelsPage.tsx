@@ -71,7 +71,7 @@ export default function VowelsPage() {
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
                 filter === f.key
                   ? 'bg-primary text-bg-dark shadow-gold'
-                  : 'bg-white/5 text-muted hover:text-white hover:bg-white/10'
+                  : 'bg-black/5 dark:bg-white/5 text-muted hover:text-primary hover:bg-black/5 dark:hover:bg-white/10'
               }`}
             >
               {f.label}
@@ -115,7 +115,7 @@ export default function VowelsPage() {
 
                     <AudioPlayer src={v.audioFile} laoText={v.exampleWord || v.symbol} size="sm" />
 
-                    <div className="mt-3 pt-3 border-t border-white/10">
+                    <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10">
                       <p className="font-lao text-lg">{v.exampleWord}</p>
                       <p className="text-xs text-muted">{getTranslation(v)}</p>
                     </div>

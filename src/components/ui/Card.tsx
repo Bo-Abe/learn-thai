@@ -14,18 +14,18 @@ export function Card({
   className = '',
   ...props
 }: CardProps) {
-  const baseClasses = 'rounded-2xl p-6 transition-all duration-300';
+  const baseClasses = 'rounded-xl p-6 transition-all duration-200';
 
   const variantClasses = {
     default:
-      'bg-surface-dark/80 dark:bg-surface-dark/80 bg-surface-light/80 border border-white/5',
+      'bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/10 shadow-sm',
     glass:
-      'glass-dark dark:glass-dark glass-light border border-white/10',
-    gold: 'bg-surface-dark/80 dark:bg-surface-dark/80 bg-surface-light/80 border border-primary/20 shadow-gold',
+      'glass-light dark:glass-dark border border-black/5 dark:border-white/10 shadow-sm',
+    gold: 'bg-surface-light dark:bg-surface-dark border border-primary/30 shadow-blue',
   };
 
   const hoverClasses = hover
-    ? 'hover:shadow-gold-lg hover:border-primary/30 hover:-translate-y-1 cursor-pointer'
+    ? 'hover:shadow-blue-lg hover:border-primary/40 hover:-translate-y-0.5 cursor-pointer'
     : '';
 
   return (

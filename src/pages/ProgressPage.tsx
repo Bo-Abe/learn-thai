@@ -145,7 +145,7 @@ export default function ProgressPage() {
                   className={!unlocked ? 'opacity-50' : ''}
                 >
                   <div className="flex items-center gap-3">
-                    <div className={`p-2 rounded-full ${unlocked ? 'bg-primary/20' : 'bg-white/5'}`}>
+                    <div className={`p-2 rounded-full ${unlocked ? 'bg-primary/20' : 'bg-black/5 dark:bg-white/5'}`}>
                       {unlocked ? (
                         <badge.icon size={20} className="text-primary" />
                       ) : (
@@ -207,7 +207,7 @@ export default function ProgressPage() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-white/10">
+                  <tr className="border-b border-black/10 dark:border-white/10">
                     <th className="text-left pb-2 font-medium text-muted">{t('common:nav.quiz')}</th>
                     <th className="text-left pb-2 font-medium text-muted">{t('overview.quizzesTaken')}</th>
                     <th className="text-right pb-2 font-medium text-muted">%</th>
@@ -215,7 +215,7 @@ export default function ProgressPage() {
                 </thead>
                 <tbody>
                   {recentQuizzes.map((r) => (
-                    <tr key={r.id} className="border-b border-white/5">
+                    <tr key={r.id} className="border-b border-black/5 dark:border-white/5">
                       <td className="py-2 capitalize">{r.type}</td>
                       <td className="py-2">{r.score}/{r.total}</td>
                       <td className="py-2 text-right">

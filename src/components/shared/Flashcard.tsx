@@ -47,16 +47,16 @@ export function Flashcard({ front, back, audioFile, laoText, onFlip, className =
       >
         {/* Front */}
         <div
-          className="w-full rounded-2xl p-8 shadow-gold"
+          className="w-full rounded-xl shadow-blue"
           style={{ backfaceVisibility: 'hidden' }}
         >
-          <div className="dark:glass-dark glass-light rounded-2xl border border-white/10 p-8 min-h-[280px] flex flex-col items-center justify-center">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-xl border border-black/5 dark:border-white/10 p-8 min-h-[280px] flex flex-col items-center justify-center">
             {front}
             <div className="flex items-center gap-3 mt-6">
               {hasAudio && (
                 <button
                   onClick={handleAudio}
-                  className="p-2 rounded-full bg-primary/20 hover:bg-primary/30 transition-colors"
+                  className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
                   aria-label="Play audio"
                 >
                   <Volume2 size={20} className="text-primary" />
@@ -64,7 +64,7 @@ export function Flashcard({ front, back, audioFile, laoText, onFlip, className =
               )}
               <button
                 onClick={handleFlip}
-                className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+                className="p-2 rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 transition-colors"
                 aria-label="Flip card"
               >
                 <RotateCcw size={20} className="text-muted" />
@@ -75,16 +75,16 @@ export function Flashcard({ front, back, audioFile, laoText, onFlip, className =
 
         {/* Back */}
         <div
-          className="absolute inset-0 w-full rounded-2xl p-8 shadow-gold"
+          className="absolute inset-0 w-full rounded-xl shadow-blue"
           style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
         >
-          <div className="dark:glass-dark glass-light rounded-2xl border border-primary/20 p-8 min-h-[280px] flex flex-col items-center justify-center">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-xl border border-primary/20 p-8 min-h-[280px] flex flex-col items-center justify-center">
             {back}
             <div className="flex items-center gap-3 mt-6">
               {hasAudio && (
                 <button
                   onClick={handleAudio}
-                  className="p-2 rounded-full bg-primary/20 hover:bg-primary/30 transition-colors"
+                  className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
                   aria-label="Play audio"
                 >
                   <Volume2 size={20} className="text-primary" />
@@ -92,7 +92,7 @@ export function Flashcard({ front, back, audioFile, laoText, onFlip, className =
               )}
               <button
                 onClick={handleFlip}
-                className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+                className="p-2 rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 transition-colors"
                 aria-label="Flip card"
               >
                 <RotateCcw size={20} className="text-muted" />

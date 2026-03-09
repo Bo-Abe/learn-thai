@@ -97,7 +97,7 @@ export default function VocabularyPage() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t('searchPlaceholder')}
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm focus:outline-none focus:border-primary/50"
+              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-sm focus:outline-none focus:border-primary/50"
             />
           </div>
           <Button
@@ -117,7 +117,7 @@ export default function VocabularyPage() {
               className={`px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-all ${
                 selectedCategory === cat.key
                   ? 'bg-primary text-bg-dark'
-                  : 'bg-white/5 text-muted hover:bg-white/10'
+                  : 'bg-black/5 dark:bg-white/5 text-muted hover:bg-black/5 dark:hover:bg-white/10'
               }`}
             >
               {t(cat.labelKey)}
@@ -156,7 +156,7 @@ export default function VocabularyPage() {
                     </p>
                     <AudioPlayer src={currentCard.audioFile} laoText={currentCard.lao} size="sm" />
                     {currentCard.sentence && (
-                      <div className="mt-3 pt-3 border-t border-white/10 text-sm">
+                      <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10 text-sm">
                         <p className="font-lao">{currentCard.sentence.lao}</p>
                         <p className="text-muted">
                           {isFr ? currentCard.sentence.translationFr : currentCard.sentence.translationEn}

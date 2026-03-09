@@ -43,7 +43,7 @@ export function ProgressBar({
         </div>
       )}
       <div
-        className={`w-full rounded-full bg-white/10 overflow-hidden ${sizeClasses[size]}`}
+        className={`w-full rounded-full bg-black/10 dark:bg-white/10 overflow-hidden ${sizeClasses[size]}`}
         role="progressbar"
         aria-valuenow={value}
         aria-valuemin={0}

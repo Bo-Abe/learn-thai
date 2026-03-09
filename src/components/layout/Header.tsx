@@ -25,13 +25,15 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 glass-dark">
+    <header className="sticky top-0 z-40 bg-surface-light dark:bg-surface-dark border-b border-black/10 dark:border-white/10 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-            <span className="font-lao text-2xl text-primary">ລາວ</span>
-            <span className="font-serif text-lg hidden sm:block">{t('appName')}</span>
+            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
+              <span className="font-lao text-sm text-white font-bold">ລາວ</span>
+            </div>
+            <span className="font-sans text-base font-semibold hidden sm:block">{t('appName')}</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -40,10 +42,10 @@ export function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === link.path
-                    ? 'bg-primary/20 text-primary'
-                    : 'text-muted hover:text-white hover:bg-white/5'
+                    ? 'text-primary bg-primary/10'
+                    : 'text-muted hover:text-primary hover:bg-primary/5'
                 }`}
               >
                 {t(link.labelKey)}
@@ -52,13 +54,13 @@ export function Header() {
           </nav>
 
           {/* Right side actions */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <LanguageSwitcher compact className="hidden sm:flex" />
 
             <button
               onClick={toggleTheme}
               aria-label={t('theme.toggle')}
-              className="p-2 rounded-lg hover:bg-white/10 transition-colors"
+              className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
             >
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -67,7 +69,7 @@ export function Header() {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? t('accessibility.closeMenu') : t('accessibility.openMenu')}
-              className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
+              className="lg:hidden p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
             >
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -82,24 +84,24 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden border-t border-white/10 glass-dark overflow-hidden"
+            className="lg:hidden border-t border-black/10 dark:border-white/10 bg-surface-light dark:bg-surface-dark overflow-hidden"
           >
-            <div className="px-4 py-4 space-y-1">
+            <div className="px-4 py-3 space-y-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`block px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                  className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                     location.pathname === link.path
-                      ? 'bg-primary/20 text-primary'
-                      : 'text-muted hover:text-white hover:bg-white/5'
+                      ? 'text-primary bg-primary/10'
+                      : 'text-muted hover:text-primary hover:bg-primary/5'
                   }`}
                 >
                   {t(link.labelKey)}
                 </Link>
               ))}
-              <div className="pt-3 border-t border-white/10">
+              <div className="pt-3 border-t border-black/10 dark:border-white/10">
                 <LanguageSwitcher className="sm:hidden" />
               </div>
             </div>

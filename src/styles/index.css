@@ -1,23 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-dark: #0F0F0F;
-  --color-bg-light: #FAFAF8;
-  --color-primary: #C9A84C;
-  --color-primary-light: #D4B85E;
-  --color-primary-dark: #A88A3A;
-  --color-secondary: #2D5A3D;
-  --color-secondary-light: #3A7350;
-  --color-accent: #E85D3A;
-  --color-accent-light: #F07052;
-  --color-surface-dark: #1A1A1A;
+  /* LinkedIn-inspired blue/white palette */
+  --color-bg-dark: #1B1F23;
+  --color-bg-light: #F4F2EE;
+  --color-primary: #0A66C2;
+  --color-primary-light: #378FE9;
+  --color-primary-dark: #004182;
+  --color-secondary: #057642;
+  --color-secondary-light: #0A8A4E;
+  --color-accent: #E7A33E;
+  --color-accent-light: #F0B85A;
+  --color-surface-dark: #1D2226;
   --color-surface-light: #FFFFFF;
-  --color-text-dark: #F5F0E8;
-  --color-text-light: #1A1A1A;
-  --color-muted: #6B6B6B;
-  --color-success: #4CAF50;
-  --color-error: #EF5350;
-  --color-gold-glow: rgba(201, 168, 76, 0.1);
+  --color-text-dark: #E9E5DF;
+  --color-text-light: #191919;
+  --color-muted: #666666;
+  --color-success: #057642;
+  --color-error: #CC1016;
+  --color-blue-glow: rgba(10, 102, 194, 0.12);
 
   --font-lao: "Noto Sans Lao", sans-serif;
   --font-serif: "Cormorant Garamond", serif;
@@ -48,13 +49,22 @@
   }
 }
 
-/* Custom utilities */
+/* Custom utilities — LinkedIn style */
+.shadow-blue {
+  box-shadow: 0 4px 12px var(--color-blue-glow);
+}
+
+.shadow-blue-lg {
+  box-shadow: 0 8px 24px rgba(10, 102, 194, 0.18);
+}
+
+/* Legacy aliases so existing classes still work */
 .shadow-gold {
-  box-shadow: 0 8px 32px var(--color-gold-glow);
+  box-shadow: 0 4px 12px var(--color-blue-glow);
 }
 
 .shadow-gold-lg {
-  box-shadow: 0 12px 48px rgba(201, 168, 76, 0.15);
+  box-shadow: 0 8px 24px rgba(10, 102, 194, 0.18);
 }
 
 .glass {
@@ -63,17 +73,19 @@
 }
 
 .glass-dark {
-  background: rgba(26, 26, 26, 0.8);
+  background: rgba(29, 34, 38, 0.92);
   backdrop-filter: blur(12px);
 }
 
 .glass-light {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
 }
 
 .lao-pattern {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  /* subtle dot pattern inspired by LinkedIn's clean background */
+  background-image: radial-gradient(circle, rgba(10, 102, 194, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 .safe-area-bottom {

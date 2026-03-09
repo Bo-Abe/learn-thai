@@ -130,7 +130,7 @@ export default function WritingPage() {
                   className={`p-2 rounded-lg font-lao text-2xl transition-all ${
                     selectedChar.id === c.id
                       ? 'bg-primary text-bg-dark shadow-gold'
-                      : 'bg-white/5 hover:bg-white/10'
+                      : 'bg-black/5 dark:bg-white/5 hover:bg-black/5 dark:hover:bg-white/10'
                   }`}
                 >
                   {c.character}
@@ -154,7 +154,7 @@ export default function WritingPage() {
               </div>
 
               {/* Canvas */}
-              <div className="relative bg-black/20 rounded-xl overflow-hidden border border-white/10">
+              <div className="relative bg-black/20 rounded-xl overflow-hidden border border-black/10 dark:border-white/10">
                 <canvas
                   ref={canvasRef}
                   className="w-full touch-none cursor-crosshair"
@@ -192,7 +192,7 @@ export default function WritingPage() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="mt-6 pt-6 border-t border-white/10"
+                className="mt-6 pt-6 border-t border-black/10 dark:border-white/10"
               >
                 <h3 className="font-semibold mb-3">{t('compare.title')}</h3>
                 <div className="grid grid-cols-2 gap-4 text-center">

@@ -72,7 +72,7 @@ export default function ConsonantsPage() {
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
                   filter === f.key
                     ? 'bg-primary text-bg-dark shadow-gold'
-                    : 'bg-white/5 text-muted hover:text-white hover:bg-white/10'
+                    : 'bg-black/5 dark:bg-white/5 text-muted hover:text-primary hover:bg-black/5 dark:hover:bg-white/10'
                 }`}
               >
                 {f.label}
@@ -86,7 +86,7 @@ export default function ConsonantsPage() {
               onClick={() => setViewMode('grid')}
               aria-label={t('consonants.gridMode')}
               className={`p-2 rounded-lg transition-colors ${
-                viewMode === 'grid' ? 'bg-primary/20 text-primary' : 'text-muted hover:text-white'
+                viewMode === 'grid' ? 'bg-primary/20 text-primary' : 'text-muted hover:text-primary'
               }`}
             >
               <Grid3X3 size={20} />
@@ -95,7 +95,7 @@ export default function ConsonantsPage() {
               onClick={() => setViewMode('flashcard')}
               aria-label={t('consonants.flashcardMode')}
               className={`p-2 rounded-lg transition-colors ${
-                viewMode === 'flashcard' ? 'bg-primary/20 text-primary' : 'text-muted hover:text-white'
+                viewMode === 'flashcard' ? 'bg-primary/20 text-primary' : 'text-muted hover:text-primary'
               }`}
             >
               <Layers size={20} />

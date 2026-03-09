@@ -97,7 +97,7 @@ export default function TonesPage() {
                   <motion.div
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
-                    className="mt-4 pt-4 border-t border-white/10"
+                    className="mt-4 pt-4 border-t border-black/10 dark:border-white/10"
                   >
                     <h4 className="text-sm font-medium mb-2">{t('tones.minimalPairs')}</h4>
                     {tone.minimalPairs.map((pair, i) => (
@@ -130,9 +130,9 @@ export default function TonesPage() {
           <p className="text-muted mb-6">{t('tones.rules.description')}</p>
 
           <div className="overflow-x-auto">
-            <table className="w-full text-sm border border-white/10 rounded-xl overflow-hidden">
+            <table className="w-full text-sm border border-black/10 dark:border-white/10 rounded-xl overflow-hidden">
               <thead>
-                <tr className="bg-white/5">
+                <tr className="bg-black/5 dark:bg-white/5">
                   <th className="text-left px-4 py-3 font-medium">{t('tones.rules.consonantClass')}</th>
                   <th className="text-left px-4 py-3 font-medium">{t('tones.rules.noMark')}</th>
                   <th className="text-left px-4 py-3 font-medium">{t('tones.rules.maiEk')}</th>
@@ -140,19 +140,19 @@ export default function TonesPage() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-t border-white/10">
+                <tr className="border-t border-black/10 dark:border-white/10">
                   <td className="px-4 py-3 font-medium">{t('consonants.filter.high')}</td>
                   <td className="px-4 py-3">Rising</td>
                   <td className="px-4 py-3">Low</td>
                   <td className="px-4 py-3">Falling</td>
                 </tr>
-                <tr className="border-t border-white/10 bg-white/[0.02]">
+                <tr className="border-t border-black/10 dark:border-white/10 bg-white/[0.02]">
                   <td className="px-4 py-3 font-medium">{t('consonants.filter.mid')}</td>
                   <td className="px-4 py-3">Mid</td>
                   <td className="px-4 py-3">Low</td>
                   <td className="px-4 py-3">Falling</td>
                 </tr>
-                <tr className="border-t border-white/10">
+                <tr className="border-t border-black/10 dark:border-white/10">
                   <td className="px-4 py-3 font-medium">{t('consonants.filter.low')}</td>
                   <td className="px-4 py-3">Rising</td>
                   <td className="px-4 py-3">Mid</td>

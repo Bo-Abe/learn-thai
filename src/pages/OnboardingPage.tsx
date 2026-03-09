@@ -80,7 +80,7 @@ export default function OnboardingPage() {
             <div
               key={i}
               className={`h-2 rounded-full transition-all duration-300 ${
-                i === step ? 'w-8 bg-primary' : 'w-2 bg-white/20'
+                i === step ? 'w-8 bg-primary' : 'w-2 bg-black/10 dark:bg-white/20'
               }`}
             />
           ))}
@@ -95,7 +95,7 @@ export default function OnboardingPage() {
             transition={{ duration: 0.3 }}
             className="text-center"
           >
-            <div className={`inline-flex p-4 rounded-2xl bg-white/5 mb-6 ${current.color}`}>
+            <div className={`inline-flex p-4 rounded-2xl bg-black/5 dark:bg-white/5 mb-6 ${current.color}`}>
               <current.icon size={48} />
             </div>
 

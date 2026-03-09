@@ -57,7 +57,7 @@ export default function SettingsPage() {
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
                   theme === th
                     ? 'bg-primary text-bg-dark shadow-gold'
-                    : 'bg-white/5 text-muted hover:text-white'
+                    : 'bg-black/5 dark:bg-white/5 text-muted hover:text-primary'
                 }`}
               >
                 {t(`theme.${th}`)}
@@ -78,7 +78,7 @@ export default function SettingsPage() {
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
                   speed === s
                     ? 'bg-primary text-bg-dark shadow-gold'
-                    : 'bg-white/5 text-muted hover:text-white'
+                    : 'bg-black/5 dark:bg-white/5 text-muted hover:text-primary'
                 }`}
               >
                 {s === 0.75 ? t('audio.speedSlow') : s === 1 ? t('audio.speedNormal') : t('audio.speedFast')}
@@ -97,7 +97,7 @@ export default function SettingsPage() {
                 <Download size={16} /> {t('progress.export')}
               </Button>
             </div>
-            <div className="pt-3 border-t border-white/10">
+            <div className="pt-3 border-t border-black/10 dark:border-white/10">
               <p className="text-sm text-muted mb-2">{t('progress.resetDesc')}</p>
               <Button variant="accent" size="sm" onClick={() => setShowResetModal(true)}>
                 {t('progress.reset')}

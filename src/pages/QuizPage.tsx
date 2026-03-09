@@ -337,7 +337,7 @@ export default function QuizPage() {
                 <h3 className="font-semibold mb-4">{t('result.review')}</h3>
                 <div className="space-y-2">
                   {mistakes.map((m, i) => (
-                    <div key={i} className="flex justify-between text-sm bg-white/5 rounded-lg p-3">
+                    <div key={i} className="flex justify-between text-sm bg-black/5 dark:bg-white/5 rounded-lg p-3">
                       <span className="text-error line-through">{m.userAnswer}</span>
                       <span className="text-success">{m.correctAnswer}</span>
                     </div>

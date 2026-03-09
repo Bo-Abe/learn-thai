@@ -44,7 +44,7 @@ export function Modal({ isOpen, onClose, children, title, className = '' }: Moda
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             className={`relative z-10 w-full max-w-lg max-h-[85vh] overflow-y-auto
-              bg-surface-dark border border-white/10 rounded-2xl shadow-gold-lg p-6 ${className}`}
+              bg-surface-light dark:bg-surface-dark border border-black/10 dark:border-white/10 rounded-xl shadow-blue-lg p-6 ${className}`}
           >
             <div className="flex items-center justify-between mb-4">
               {title && <h2 className="text-xl font-serif font-semibold">{title}</h2>}
