@@ -1,0 +1,37 @@
+{
+  "title": "Paramètres",
+  "subtitle": "Personnalisez votre expérience d'apprentissage",
+  "language": {
+    "title": "Langue de l'interface",
+    "desc": "Choisissez la langue de l'interface de l'application"
+  },
+  "theme": {
+    "title": "Thème",
+    "desc": "Choisissez entre le mode clair et sombre",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "audio": {
+    "title": "Paramètres audio",
+    "speed": "Vitesse de lecture",
+    "speedSlow": "Lent (0,75x)",
+    "speedNormal": "Normal (1x)",
+    "speedFast": "Rapide (1,25x)",
+    "autoplay": "Lecture automatique",
+    "autoplayDesc": "Jouer automatiquement la prononciation lors de l'affichage d'un caractère"
+  },
+  "progress": {
+    "title": "Données de progression",
+    "export": "Exporter la progression",
+    "exportDesc": "Téléchargez vos données d'apprentissage au format JSON",
+    "reset": "Réinitialiser la progression",
+    "resetDesc": "Supprimer toute la progression et recommencer",
+    "resetConfirm": "Êtes-vous sûr ? Cette action est irréversible."
+  },
+  "about": {
+    "title": "À propos",
+    "version": "Version",
+    "description": "Une application interactive pour apprendre à lire et écrire la langue lao. Conçue avec amour pour les passionnés de langues."
+  }
+}

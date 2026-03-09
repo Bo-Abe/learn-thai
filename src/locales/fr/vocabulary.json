@@ -1,0 +1,49 @@
+{
+  "title": "Vocabulaire",
+  "subtitle": "Enrichissez votre vocabulaire lao",
+  "searchPlaceholder": "Rechercher en lao, romanisation ou français...",
+  "categories": {
+    "all": "Toutes les catégories",
+    "greetings": "Salutations",
+    "numbers": "Chiffres",
+    "colors": "Couleurs",
+    "family": "Famille",
+    "food": "Nourriture & Boissons",
+    "animals": "Animaux",
+    "body": "Parties du corps",
+    "time": "Temps & Dates",
+    "transport": "Transport",
+    "places": "Lieux",
+    "commonVerbs": "Verbes courants",
+    "adjectives": "Adjectifs",
+    "usefulPhrases": "Phrases utiles"
+  },
+  "card": {
+    "romanization": "Romanisation",
+    "translation": "Traduction",
+    "difficulty": "Difficulté",
+    "category": "Catégorie",
+    "example": "Phrase d'exemple",
+    "listenBtn": "Écouter"
+  },
+  "flashcard": {
+    "title": "Mode Flashcard",
+    "flip": "Retourner la carte",
+    "know": "Je connais",
+    "dontKnow": "J'apprends encore",
+    "remaining": "{{count}} cartes restantes",
+    "complete": "Bravo ! Vous avez révisé toutes les cartes.",
+    "restart": "Réviser à nouveau"
+  },
+  "stats": {
+    "total": "Total des mots",
+    "learned": "Appris",
+    "learning": "En cours",
+    "new": "Nouveaux"
+  },
+  "difficulty1": "Débutant",
+  "difficulty2": "Intermédiaire",
+  "difficulty3": "Avancé",
+  "noResults": "Aucun résultat pour « {{query}} »",
+  "wordsCount": "{{count}} mots"
+}

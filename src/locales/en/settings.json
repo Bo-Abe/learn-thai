@@ -1,0 +1,37 @@
+{
+  "title": "Settings",
+  "subtitle": "Customize your learning experience",
+  "language": {
+    "title": "Interface Language",
+    "desc": "Choose the language for the app interface"
+  },
+  "theme": {
+    "title": "Theme",
+    "desc": "Choose between light and dark mode",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "audio": {
+    "title": "Audio Settings",
+    "speed": "Playback Speed",
+    "speedSlow": "Slow (0.75x)",
+    "speedNormal": "Normal (1x)",
+    "speedFast": "Fast (1.25x)",
+    "autoplay": "Auto-play audio",
+    "autoplayDesc": "Automatically play pronunciation when viewing a character"
+  },
+  "progress": {
+    "title": "Progress Data",
+    "export": "Export Progress",
+    "exportDesc": "Download your learning data as JSON",
+    "reset": "Reset All Progress",
+    "resetDesc": "Delete all learning progress and start fresh",
+    "resetConfirm": "Are you sure? This cannot be undone."
+  },
+  "about": {
+    "title": "About",
+    "version": "Version",
+    "description": "An interactive application for learning to read and write the Lao language. Built with love for language enthusiasts."
+  }
+}

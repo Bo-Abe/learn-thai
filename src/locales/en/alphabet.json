@@ -1,0 +1,90 @@
+{
+  "consonants": {
+    "title": "Lao Consonants",
+    "subtitle": "Master the 33 consonants of the Lao alphabet",
+    "filter": {
+      "all": "All classes",
+      "high": "High class",
+      "mid": "Mid class",
+      "low": "Low class"
+    },
+    "card": {
+      "class": "Tone class",
+      "romanization": "Romanization",
+      "ipa": "IPA",
+      "example": "Example word",
+      "listenBtn": "Listen to pronunciation",
+      "highClass": "High",
+      "midClass": "Mid",
+      "lowClass": "Low"
+    },
+    "flashcardMode": "Flashcard Mode",
+    "gridMode": "Grid Mode",
+    "progress": "{{learned}} of {{total}} learned",
+    "markLearned": "Mark as learned",
+    "markUnlearned": "Mark as not learned"
+  },
+  "vowels": {
+    "title": "Lao Vowels",
+    "subtitle": "Learn the 28 vowels and their positions",
+    "filter": {
+      "all": "All vowels",
+      "short": "Short vowels",
+      "long": "Long vowels"
+    },
+    "position": {
+      "label": "Position",
+      "before": "Before consonant",
+      "after": "After consonant",
+      "above": "Above consonant",
+      "below": "Below consonant",
+      "around": "Around consonant"
+    },
+    "length": {
+      "short": "Short",
+      "long": "Long"
+    },
+    "card": {
+      "romanization": "Romanization",
+      "ipa": "IPA",
+      "position": "Position",
+      "length": "Length",
+      "example": "Example",
+      "listenBtn": "Listen"
+    },
+    "progress": "{{learned}} of {{total}} learned"
+  },
+  "tones": {
+    "title": "Lao Tones",
+    "subtitle": "Understand the 6 tones of the Lao language",
+    "description": "Lao is a tonal language where the pitch pattern of a syllable changes its meaning. The tone of a syllable depends on the consonant class, vowel length, and tone mark.",
+    "tone": "Tone",
+    "marker": "Marker",
+    "contour": "Contour",
+    "example": "Example",
+    "listenBtn": "Listen to tone",
+    "minimalPairs": "Minimal pairs",
+    "word": "Word",
+    "meaning": "Meaning",
+    "rules": {
+      "title": "Tone Rules",
+      "description": "The resulting tone depends on the consonant class and tone mark",
+      "consonantClass": "Consonant class",
+      "noMark": "No mark",
+      "maiEk": "Mai ek (່)",
+      "maiTho": "Mai tho (້)"
+    },
+    "exercise": {
+      "title": "Tone Listening Exercise",
+      "instruction": "Listen to the audio and identify the tone",
+      "correct": "Correct!",
+      "incorrect": "Not quite. The correct answer is {{answer}}."
+    }
+  },
+  "numbers": {
+    "title": "Lao Numbers",
+    "subtitle": "Learn the Lao numeral system",
+    "laoNumeral": "Lao numeral",
+    "arabicNumeral": "Arabic numeral"
+  }
+}

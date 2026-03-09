@@ -1,0 +1,29 @@
+{
+  "title": "Writing Practice",
+  "subtitle": "Practice writing Lao characters by hand",
+  "selectCharacter": "Select a character to practice",
+  "canvas": {
+    "draw": "Draw the character here",
+    "clear": "Clear",
+    "undo": "Undo",
+    "showGuide": "Show guide",
+    "hideGuide": "Hide guide",
+    "strokeOrder": "Stroke order",
+    "step": "Step {{current}} of {{total}}"
+  },
+  "compare": {
+    "title": "Compare",
+    "yours": "Your writing",
+    "target": "Target character"
+  },
+  "practice": {
+    "freeMode": "Free Practice",
+    "guidedMode": "Guided Practice",
+    "freeModeDesc": "Practice any character without guidance",
+    "guidedModeDesc": "Follow stroke-by-stroke instructions"
+  },
+  "feedback": {
+    "good": "Good writing!",
+    "tryAgain": "Try to follow the stroke order more closely"
+  }
+}

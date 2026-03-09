@@ -1,0 +1,72 @@
+{
+  "appName": "Apprendre le Lao",
+  "appNameLao": "ຮຽນພາສາລາວ",
+  "nav": {
+    "home": "Accueil",
+    "alphabet": "Alphabet",
+    "consonants": "Consonnes",
+    "vowels": "Voyelles",
+    "tones": "Tons",
+    "vocabulary": "Vocabulaire",
+    "quiz": "Quiz",
+    "writing": "Exercice d'écriture",
+    "progress": "Progression",
+    "settings": "Paramètres"
+  },
+  "audio": {
+    "play": "Écouter",
+    "stop": "Arrêter",
+    "speed": "Vitesse de lecture",
+    "loading": "Chargement audio..."
+  },
+  "actions": {
+    "start": "Commencer",
+    "continue": "Continuer",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "back": "Retour",
+    "close": "Fermer",
+    "reset": "Réinitialiser",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "showAll": "Tout afficher",
+    "learnMore": "En savoir plus",
+    "tryAgain": "Réessayer",
+    "viewAll": "Tout voir"
+  },
+  "difficulty": {
+    "beginner": "Débutant",
+    "intermediate": "Intermédiaire",
+    "advanced": "Avancé"
+  },
+  "language": {
+    "en": "Anglais",
+    "fr": "Français",
+    "switch": "Changer de langue"
+  },
+  "theme": {
+    "light": "Mode clair",
+    "dark": "Mode sombre",
+    "toggle": "Changer de thème"
+  },
+  "accessibility": {
+    "skipToContent": "Aller au contenu",
+    "mainNavigation": "Navigation principale",
+    "closeMenu": "Fermer le menu",
+    "openMenu": "Ouvrir le menu"
+  },
+  "footer": {
+    "madeWith": "Fait avec amour pour les apprenants de la langue lao",
+    "copyright": "© 2024 Apprendre le Lao"
+  },
+  "loading": "Chargement...",
+  "error": {
+    "generic": "Une erreur est survenue",
+    "notFound": "Page introuvable",
+    "notFoundDesc": "La page que vous recherchez n'existe pas.",
+    "goHome": "Retour à l'accueil",
+    "retry": "Réessayer"
+  }
+}

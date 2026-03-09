@@ -1,0 +1,90 @@
+{
+  "consonants": {
+    "title": "Consonnes Lao",
+    "subtitle": "Maîtrisez les 33 consonnes de l'alphabet lao",
+    "filter": {
+      "all": "Toutes les classes",
+      "high": "Classe haute",
+      "mid": "Classe moyenne",
+      "low": "Classe basse"
+    },
+    "card": {
+      "class": "Classe tonale",
+      "romanization": "Romanisation",
+      "ipa": "API",
+      "example": "Mot exemple",
+      "listenBtn": "Écouter la prononciation",
+      "highClass": "Haute",
+      "midClass": "Moyenne",
+      "lowClass": "Basse"
+    },
+    "flashcardMode": "Mode Flashcard",
+    "gridMode": "Mode Grille",
+    "progress": "{{learned}} sur {{total}} apprises",
+    "markLearned": "Marquer comme apprise",
+    "markUnlearned": "Marquer comme non apprise"
+  },
+  "vowels": {
+    "title": "Voyelles Lao",
+    "subtitle": "Apprenez les 28 voyelles et leurs positions",
+    "filter": {
+      "all": "Toutes les voyelles",
+      "short": "Voyelles courtes",
+      "long": "Voyelles longues"
+    },
+    "position": {
+      "label": "Position",
+      "before": "Avant la consonne",
+      "after": "Après la consonne",
+      "above": "Au-dessus de la consonne",
+      "below": "En dessous de la consonne",
+      "around": "Autour de la consonne"
+    },
+    "length": {
+      "short": "Courte",
+      "long": "Longue"
+    },
+    "card": {
+      "romanization": "Romanisation",
+      "ipa": "API",
+      "position": "Position",
+      "length": "Longueur",
+      "example": "Exemple",
+      "listenBtn": "Écouter"
+    },
+    "progress": "{{learned}} sur {{total}} apprises"
+  },
+  "tones": {
+    "title": "Tons Lao",
+    "subtitle": "Comprenez les 6 tons de la langue lao",
+    "description": "Le lao est une langue tonale où la hauteur mélodique d'une syllabe change sa signification. Le ton d'une syllabe dépend de la classe de la consonne, de la longueur de la voyelle et de la marque tonale.",
+    "tone": "Ton",
+    "marker": "Marque",
+    "contour": "Contour",
+    "example": "Exemple",
+    "listenBtn": "Écouter le ton",
+    "minimalPairs": "Paires minimales",
+    "word": "Mot",
+    "meaning": "Signification",
+    "rules": {
+      "title": "Règles tonales",
+      "description": "Le ton résultant dépend de la classe de la consonne et de la marque tonale",
+      "consonantClass": "Classe de consonne",
+      "noMark": "Sans marque",
+      "maiEk": "Mai ek (່)",
+      "maiTho": "Mai tho (້)"
+    },
+    "exercise": {
+      "title": "Exercice d'écoute des tons",
+      "instruction": "Écoutez l'audio et identifiez le ton",
+      "correct": "Correct !",
+      "incorrect": "Pas tout à fait. La bonne réponse est {{answer}}."
+    }
+  },
+  "numbers": {
+    "title": "Chiffres Lao",
+    "subtitle": "Apprenez le système numérique lao",
+    "laoNumeral": "Chiffre lao",
+    "arabicNumeral": "Chiffre arabe"
+  }
+}

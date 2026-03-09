@@ -1,0 +1,64 @@
+{
+  "title": "Quiz",
+  "subtitle": "Test your Lao language knowledge",
+  "types": {
+    "recognition": {
+      "title": "Character Recognition",
+      "desc": "Identify the correct romanization for a Lao character",
+      "instruction": "What is the romanization of this character?"
+    },
+    "listening": {
+      "title": "Listening",
+      "desc": "Listen to the audio and select the correct character",
+      "instruction": "Listen and select the correct Lao character"
+    },
+    "writing": {
+      "title": "Writing",
+      "desc": "Type the correct Lao character from the romanization",
+      "instruction": "Type the Lao character for this romanization"
+    },
+    "translation": {
+      "title": "Translation",
+      "desc": "Translate Lao words to English",
+      "instruction": "What does this word mean?"
+    }
+  },
+  "difficulty": {
+    "title": "Select difficulty",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "start": "Start Quiz",
+  "question": "Question {{current}} of {{total}}",
+  "score": "Score: {{score}}",
+  "timeLeft": "Time left: {{time}}s",
+  "feedback": {
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "correctAnswer": "The correct answer was: {{answer}}",
+    "explanation": "Explanation"
+  },
+  "result": {
+    "title": "Quiz Complete!",
+    "score": "Your score: {{correct}}/{{total}}",
+    "percentage": "{{percentage}}%",
+    "time": "Time: {{time}}",
+    "perfect": "Perfect score! Amazing!",
+    "great": "Great job! Keep it up!",
+    "good": "Good work! Practice makes perfect.",
+    "needsPractice": "Keep practicing, you'll get there!",
+    "review": "Review mistakes",
+    "retry": "Try again",
+    "nextLevel": "Next level",
+    "backToQuiz": "Back to quiz selection"
+  },
+  "history": {
+    "title": "Quiz History",
+    "noHistory": "No quiz history yet. Take your first quiz!",
+    "date": "Date",
+    "type": "Type",
+    "score": "Score",
+    "duration": "Duration"
+  }
+}

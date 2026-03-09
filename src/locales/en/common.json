@@ -1,0 +1,72 @@
+{
+  "appName": "Learn Lao",
+  "appNameLao": "ຮຽນພາສາລາວ",
+  "nav": {
+    "home": "Home",
+    "alphabet": "Alphabet",
+    "consonants": "Consonants",
+    "vowels": "Vowels",
+    "tones": "Tones",
+    "vocabulary": "Vocabulary",
+    "quiz": "Quiz",
+    "writing": "Writing Practice",
+    "progress": "Progress",
+    "settings": "Settings"
+  },
+  "audio": {
+    "play": "Play audio",
+    "stop": "Stop audio",
+    "speed": "Playback speed",
+    "loading": "Loading audio..."
+  },
+  "actions": {
+    "start": "Get Started",
+    "continue": "Continue",
+    "next": "Next",
+    "previous": "Previous",
+    "back": "Back",
+    "close": "Close",
+    "reset": "Reset",
+    "save": "Save",
+    "cancel": "Cancel",
+    "search": "Search",
+    "filter": "Filter",
+    "showAll": "Show all",
+    "learnMore": "Learn more",
+    "tryAgain": "Try again",
+    "viewAll": "View all"
+  },
+  "difficulty": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "language": {
+    "en": "English",
+    "fr": "French",
+    "switch": "Switch language"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "toggle": "Toggle theme"
+  },
+  "accessibility": {
+    "skipToContent": "Skip to content",
+    "mainNavigation": "Main navigation",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu"
+  },
+  "footer": {
+    "madeWith": "Made with love for Lao language learners",
+    "copyright": "© 2024 Learn Lao"
+  },
+  "loading": "Loading...",
+  "error": {
+    "generic": "Something went wrong",
+    "notFound": "Page not found",
+    "notFoundDesc": "The page you're looking for doesn't exist.",
+    "goHome": "Go back home",
+    "retry": "Retry"
+  }
+}

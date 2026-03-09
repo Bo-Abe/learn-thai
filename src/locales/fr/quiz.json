@@ -1,0 +1,64 @@
+{
+  "title": "Quiz",
+  "subtitle": "Testez vos connaissances en lao",
+  "types": {
+    "recognition": {
+      "title": "Reconnaissance de caractères",
+      "desc": "Identifiez la bonne romanisation d'un caractère lao",
+      "instruction": "Quelle est la romanisation de ce caractère ?"
+    },
+    "listening": {
+      "title": "Écoute",
+      "desc": "Écoutez l'audio et sélectionnez le bon caractère",
+      "instruction": "Écoutez et sélectionnez le bon caractère lao"
+    },
+    "writing": {
+      "title": "Écriture",
+      "desc": "Tapez le bon caractère lao à partir de la romanisation",
+      "instruction": "Tapez le caractère lao pour cette romanisation"
+    },
+    "translation": {
+      "title": "Traduction",
+      "desc": "Traduisez les mots lao en français",
+      "instruction": "Que signifie ce mot ?"
+    }
+  },
+  "difficulty": {
+    "title": "Choisir la difficulté",
+    "easy": "Facile",
+    "medium": "Moyen",
+    "hard": "Difficile"
+  },
+  "start": "Commencer le quiz",
+  "question": "Question {{current}} sur {{total}}",
+  "score": "Score : {{score}}",
+  "timeLeft": "Temps restant : {{time}}s",
+  "feedback": {
+    "correct": "Correct !",
+    "incorrect": "Incorrect",
+    "correctAnswer": "La bonne réponse était : {{answer}}",
+    "explanation": "Explication"
+  },
+  "result": {
+    "title": "Quiz terminé !",
+    "score": "Votre score : {{correct}}/{{total}}",
+    "percentage": "{{percentage}} %",
+    "time": "Temps : {{time}}",
+    "perfect": "Score parfait ! Incroyable !",
+    "great": "Excellent travail ! Continuez ainsi !",
+    "good": "Bon travail ! C'est en forgeant qu'on devient forgeron.",
+    "needsPractice": "Continuez à pratiquer, vous y arriverez !",
+    "review": "Revoir les erreurs",
+    "retry": "Réessayer",
+    "nextLevel": "Niveau suivant",
+    "backToQuiz": "Retour à la sélection du quiz"
+  },
+  "history": {
+    "title": "Historique des quiz",
+    "noHistory": "Pas encore d'historique. Passez votre premier quiz !",
+    "date": "Date",
+    "type": "Type",
+    "score": "Score",
+    "duration": "Durée"
+  }
+}

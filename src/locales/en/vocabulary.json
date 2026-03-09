@@ -1,0 +1,49 @@
+{
+  "title": "Vocabulary",
+  "subtitle": "Build your Lao word bank",
+  "searchPlaceholder": "Search in Lao, romanization, or English...",
+  "categories": {
+    "all": "All categories",
+    "greetings": "Greetings",
+    "numbers": "Numbers",
+    "colors": "Colors",
+    "family": "Family",
+    "food": "Food & Drinks",
+    "animals": "Animals",
+    "body": "Body parts",
+    "time": "Time & Dates",
+    "transport": "Transport",
+    "places": "Places",
+    "commonVerbs": "Common Verbs",
+    "adjectives": "Adjectives",
+    "usefulPhrases": "Useful Phrases"
+  },
+  "card": {
+    "romanization": "Romanization",
+    "translation": "Translation",
+    "difficulty": "Difficulty",
+    "category": "Category",
+    "example": "Example sentence",
+    "listenBtn": "Listen"
+  },
+  "flashcard": {
+    "title": "Flashcard Mode",
+    "flip": "Flip card",
+    "know": "I know this",
+    "dontKnow": "Still learning",
+    "remaining": "{{count}} cards remaining",
+    "complete": "Well done! You've reviewed all cards.",
+    "restart": "Review again"
+  },
+  "stats": {
+    "total": "Total words",
+    "learned": "Learned",
+    "learning": "In progress",
+    "new": "New"
+  },
+  "difficulty1": "Beginner",
+  "difficulty2": "Intermediate",
+  "difficulty3": "Advanced",
+  "noResults": "No results found for \"{{query}}\"",
+  "wordsCount": "{{count}} words"
+}

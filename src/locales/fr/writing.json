@@ -1,0 +1,29 @@
+{
+  "title": "Exercice d'écriture",
+  "subtitle": "Pratiquez l'écriture des caractères lao à la main",
+  "selectCharacter": "Sélectionnez un caractère à pratiquer",
+  "canvas": {
+    "draw": "Dessinez le caractère ici",
+    "clear": "Effacer",
+    "undo": "Annuler",
+    "showGuide": "Afficher le guide",
+    "hideGuide": "Masquer le guide",
+    "strokeOrder": "Ordre des traits",
+    "step": "Étape {{current}} sur {{total}}"
+  },
+  "compare": {
+    "title": "Comparer",
+    "yours": "Votre écriture",
+    "target": "Caractère cible"
+  },
+  "practice": {
+    "freeMode": "Pratique libre",
+    "guidedMode": "Pratique guidée",
+    "freeModeDesc": "Pratiquez n'importe quel caractère sans guide",
+    "guidedModeDesc": "Suivez les instructions trait par trait"
+  },
+  "feedback": {
+    "good": "Belle écriture !",
+    "tryAgain": "Essayez de suivre l'ordre des traits plus précisément"
+  }
+}

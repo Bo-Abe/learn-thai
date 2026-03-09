@@ -1,0 +1,54 @@
+{
+  "title": "Votre progression",
+  "subtitle": "Suivez votre parcours d'apprentissage du lao",
+  "overview": {
+    "title": "Vue d'ensemble",
+    "consonantsMastered": "Consonnes maîtrisées",
+    "vowelsMastered": "Voyelles maîtrisées",
+    "vocabularyLearned": "Vocabulaire appris",
+    "quizzesTaken": "Quiz complétés",
+    "overallProgress": "Progression globale"
+  },
+  "streak": {
+    "title": "Série d'apprentissage",
+    "days": "{{count}} jour consécutif",
+    "days_plural": "{{count}} jours consécutifs",
+    "record": "Record personnel : {{count}} jours",
+    "keepGoing": "Continuez ! Pratiquez quotidiennement pour maintenir votre série."
+  },
+  "chart": {
+    "title": "Progression dans le temps",
+    "thisWeek": "Cette semaine",
+    "thisMonth": "Ce mois",
+    "allTime": "Depuis le début",
+    "score": "Score",
+    "date": "Date"
+  },
+  "difficult": {
+    "title": "Caractères à revoir",
+    "desc": "Ces caractères sont ceux que vous avez le plus souvent manqués en quiz",
+    "noData": "Complétez quelques quiz pour voir vos caractères difficiles"
+  },
+  "badges": {
+    "title": "Badges",
+    "firstLesson": "Première leçon",
+    "firstLessonDesc": "A terminé sa première leçon",
+    "consonantMaster": "Maître des consonnes",
+    "consonantMasterDesc": "A appris les 33 consonnes",
+    "vowelMaster": "Maître des voyelles",
+    "vowelMasterDesc": "A appris les 28 voyelles",
+    "quizWhiz": "As du quiz",
+    "quizWhizDesc": "A obtenu 100 % à un quiz",
+    "weekStreak": "Guerrier de la semaine",
+    "weekStreakDesc": "Série de 7 jours d'apprentissage",
+    "vocab100": "Collectionneur de mots",
+    "vocab100Desc": "A appris 100 mots de vocabulaire",
+    "locked": "Continuez à apprendre pour débloquer !"
+  },
+  "reset": {
+    "title": "Réinitialiser la progression",
+    "warning": "Cela supprimera définitivement toute votre progression d'apprentissage. Cette action est irréversible.",
+    "confirm": "Oui, tout réinitialiser",
+    "cancel": "Annuler"
+  }
+}
