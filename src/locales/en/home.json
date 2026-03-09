@@ -31,6 +31,10 @@
     "writing": {
       "title": "Writing Practice",
       "desc": "Practice writing Lao characters with guided stroke order"
+    },
+    "flashcards": {
+      "title": "Flashcards",
+      "desc": "Review consonants and vocabulary with interactive flip cards"
     }
   },
   "why": {

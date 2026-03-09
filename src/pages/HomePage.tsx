@@ -9,6 +9,7 @@ import {
   Languages,
   HelpCircle,
   PenTool,
+  Layers,
   Landmark,
   Plane,
   Sparkles,
@@ -44,6 +45,7 @@ export default function HomePage() {
     { path: '/vocabulary', icon: Languages, titleKey: 'modules.vocabulary.title', descKey: 'modules.vocabulary.desc', color: 'text-primary' },
     { path: '/quiz', icon: HelpCircle, titleKey: 'modules.quiz.title', descKey: 'modules.quiz.desc', color: 'text-accent' },
     { path: '/writing', icon: PenTool, titleKey: 'modules.writing.title', descKey: 'modules.writing.desc', color: 'text-secondary' },
+    { path: '/flashcards', icon: Layers, titleKey: 'modules.flashcards.title', descKey: 'modules.flashcards.desc', color: 'text-primary' },
   ];
 
   const reasons = [

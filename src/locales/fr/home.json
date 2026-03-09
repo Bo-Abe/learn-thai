@@ -31,6 +31,10 @@
     "writing": {
       "title": "Exercice d'écriture",
       "desc": "Pratiquez l'écriture des caractères lao avec un guide de tracé"
+    },
+    "flashcards": {
+      "title": "Cartes mémoire",
+      "desc": "Révisez les consonnes et le vocabulaire avec des cartes interactives"
     }
   },
   "why": {

@@ -14,6 +14,7 @@ const navLinks = [
   { path: '/vocabulary', labelKey: 'nav.vocabulary' },
   { path: '/quiz', labelKey: 'nav.quiz' },
   { path: '/writing', labelKey: 'nav.writing' },
+  { path: '/flashcards', labelKey: 'nav.flashcards' },
   { path: '/progress', labelKey: 'nav.progress' },
 ];
 

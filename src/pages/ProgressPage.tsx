@@ -169,6 +169,37 @@ export default function ProgressPage() {
           </div>
         </section>
 
+        {/* Quiz Score Chart */}
+        {recentQuizzes.length > 0 && (
+          <section className="mb-12">
+            <h2 className="font-serif text-xl font-semibold mb-4">{t('chart.title')}</h2>
+            <Card variant="glass" hover={false}>
+              <div className="flex items-end gap-2 h-40">
+                {recentQuizzes.slice(0, 10).reverse().map((r) => (
+                  <div key={r.id} className="flex-1 flex flex-col items-center gap-1">
+                    <span className="text-xs text-muted">{r.percentage}%</span>
+                    <motion.div
+                      initial={{ height: 0 }}
+                      animate={{ height: `${r.percentage}%` }}
+                      transition={{ duration: 0.5, ease: 'easeOut' }}
+                      className={`w-full rounded-t-md min-h-[4px] ${
+                        r.percentage >= 80
+                          ? 'bg-success'
+                          : r.percentage >= 60
+                            ? 'bg-primary'
+                            : 'bg-error'
+                      }`}
+                    />
+                    <span className="text-[10px] text-muted truncate max-w-full">
+                      {new Date(r.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </section>
+        )}
+
         {/* Quiz History */}
         {recentQuizzes.length > 0 && (
           <section>

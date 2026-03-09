@@ -15,6 +15,8 @@ const QuizPage = lazy(() => import('@/pages/QuizPage'));
 const WritingPage = lazy(() => import('@/pages/WritingPage'));
 const ProgressPage = lazy(() => import('@/pages/ProgressPage'));
 const SettingsPage = lazy(() => import('@/pages/SettingsPage'));
+const FlashcardsPage = lazy(() => import('@/pages/FlashcardsPage'));
+const OnboardingPage = lazy(() => import('@/pages/OnboardingPage'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
 function App() {
@@ -34,7 +36,9 @@ function App() {
                   <Route path="/quiz" element={<QuizPage />} />
                   <Route path="/writing" element={<WritingPage />} />
                   <Route path="/progress" element={<ProgressPage />} />
+                  <Route path="/flashcards" element={<FlashcardsPage />} />
                   <Route path="/settings" element={<SettingsPage />} />
+                  <Route path="/onboarding" element={<OnboardingPage />} />
                   <Route path="*" element={<NotFoundPage />} />
                 </Route>
               </Routes>
