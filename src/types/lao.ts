@@ -8,6 +8,7 @@ export interface ThaiConsonant {
   exampleTranslationEn: string;
   exampleTranslationFr: string;
   audioFile: string;
+  illustrationSvg?: string;
   strokeOrder?: number[];
 }
 
@@ -22,6 +23,7 @@ export interface ThaiVowel {
   exampleTranslationEn: string;
   exampleTranslationFr: string;
   audioFile: string;
+  illustrationSvg?: string;
 }
 
 export interface ThaiTone {
@@ -68,6 +70,7 @@ export interface VocabularyWord {
   category: VocabCategory;
   difficulty: 1 | 2 | 3;
   audioFile: string;
+  illustrationSvg?: string;
   sentence?: {
     thai: string;
     romanization: string;
@@ -82,6 +85,7 @@ export interface ThaiNumber {
   arabicNumeral: number;
   romanization: string;
   audioFile: string;
+  illustrationSvg?: string;
 }
 
 export interface QuizQuestion {

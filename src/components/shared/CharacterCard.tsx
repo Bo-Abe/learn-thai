@@ -13,6 +13,7 @@ interface CharacterCardProps {
   exampleWord?: string;
   exampleTranslation?: string;
   audioFile: string;
+  illustration?: string;
   isLearned?: boolean;
   onClick?: () => void;
 }
@@ -31,6 +32,7 @@ export function CharacterCard({
   exampleWord,
   exampleTranslation,
   audioFile,
+  illustration,
   isLearned = false,
   onClick,
 }: CharacterCardProps) {
@@ -57,6 +59,8 @@ export function CharacterCard({
 
       <div className="text-center">
         <p className="font-thai text-5xl mb-3 text-primary">{character}</p>
+        {illustration && (          <div            className="w-12 h-12 mx-auto mb-2 opacity-70"            dangerouslySetInnerHTML={{ __html: illustration }}          />        )}
+
         <p className="text-lg font-medium mb-1">{romanization}</p>
         <p className="text-sm text-muted mb-3">{ipaSound}</p>
 

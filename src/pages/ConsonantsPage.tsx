@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Grid3X3, Layers, ChevronLeft, ChevronRight } from 'lucide-react';
 import { consonants } from '@/data/consonants';
+import { consonantIllustrations } from '@/data/consonantIllustrations';
 import { CharacterCard } from '@/components/shared/CharacterCard';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
@@ -54,9 +55,9 @@ export default function ConsonantsPage() {
           <p className="text-muted mb-4">{t('consonants.subtitle')}</p>
           <ProgressBar
             value={consonantsLearned.length}
-            max={33}
+            max={44}
             showPercentage
-            label={t('consonants.progress', { learned: consonantsLearned.length, total: 33 })}
+            label={t('consonants.progress', { learned: consonantsLearned.length, total: 44 })}
             className="max-w-md mx-auto"
           />
         </div>
@@ -120,6 +121,7 @@ export default function ConsonantsPage() {
                   exampleWord={c.exampleWord}
                   exampleTranslation={getTranslation(c)}
                   audioFile={c.audioFile}
+                  illustration={consonantIllustrations[c.id]}
                   isLearned={consonantsLearned.includes(c.id)}
                   onClick={() => {
                     if (consonantsLearned.includes(c.id)) {
@@ -152,6 +154,7 @@ export default function ConsonantsPage() {
                   exampleWord={currentFlashcard.exampleWord}
                   exampleTranslation={getTranslation(currentFlashcard)}
                   audioFile={currentFlashcard.audioFile}
+                  illustration={consonantIllustrations[currentFlashcard.id]}
                   isLearned={consonantsLearned.includes(currentFlashcard.id)}
                   onClick={() => {
                     if (consonantsLearned.includes(currentFlashcard.id)) {
