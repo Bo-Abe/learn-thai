@@ -1,7 +1,7 @@
 {
   "consonants": {
-    "title": "Consonnes Lao",
-    "subtitle": "Maîtrisez les 33 consonnes de l'alphabet lao",
+    "title": "Consonnes thaïes",
+    "subtitle": "Maîtrisez les 44 consonnes de l'alphabet thaï",
     "filter": {
       "all": "Toutes les classes",
       "high": "Classe haute",
@@ -25,8 +25,8 @@
     "markUnlearned": "Marquer comme non apprise"
   },
   "vowels": {
-    "title": "Voyelles Lao",
-    "subtitle": "Apprenez les 28 voyelles et leurs positions",
+    "title": "Voyelles thaïes",
+    "subtitle": "Apprenez les 30 voyelles et leurs positions",
     "filter": {
       "all": "Toutes les voyelles",
       "short": "Voyelles courtes",
@@ -55,9 +55,9 @@
     "progress": "{{learned}} sur {{total}} apprises"
   },
   "tones": {
-    "title": "Tons Lao",
-    "subtitle": "Comprenez les 6 tons de la langue lao",
-    "description": "Le lao est une langue tonale où la hauteur mélodique d'une syllabe change sa signification. Le ton d'une syllabe dépend de la classe de la consonne, de la longueur de la voyelle et de la marque tonale.",
+    "title": "Tons thaïs",
+    "subtitle": "Comprenez les 5 tons de la langue thaïe",
+    "description": "Le thaï est une langue tonale où la hauteur mélodique d'une syllabe change sa signification. Le ton d'une syllabe dépend de la classe de la consonne, de la longueur de la voyelle et de la marque tonale.",
     "tone": "Ton",
     "marker": "Marque",
     "contour": "Contour",
@@ -71,8 +71,8 @@
       "description": "Le ton résultant dépend de la classe de la consonne et de la marque tonale",
       "consonantClass": "Classe de consonne",
       "noMark": "Sans marque",
-      "maiEk": "Mai ek (່)",
-      "maiTho": "Mai tho (້)"
+      "maiEk": "Mai ek (่)",
+      "maiTho": "Mai tho (้)"
     },
     "exercise": {
       "title": "Exercice d'écoute des tons",
@@ -82,9 +82,9 @@
     }
   },
   "numbers": {
-    "title": "Chiffres Lao",
-    "subtitle": "Apprenez le système numérique lao",
-    "laoNumeral": "Chiffre lao",
+    "title": "Chiffres thaïs",
+    "subtitle": "Apprenez le système numérique thaï",
+    "thaiNumeral": "Chiffre thaï",
     "arabicNumeral": "Chiffre arabe"
   }
 }

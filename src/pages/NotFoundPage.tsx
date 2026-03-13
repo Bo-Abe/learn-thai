@@ -12,7 +12,7 @@ export default function NotFoundPage() {
         <title>{t('error.notFound')} | {t('appName')}</title>
       </Helmet>
       <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">
-        <p className="font-lao text-8xl text-primary mb-4">404</p>
+        <p className="font-thai text-8xl text-primary mb-4">404</p>
         <h1 className="font-serif text-2xl font-semibold mb-2">{t('error.notFound')}</h1>
         <p className="text-muted mb-6">{t('error.notFoundDesc')}</p>
         <Link to="/">

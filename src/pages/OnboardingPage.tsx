@@ -9,11 +9,11 @@ import { Button } from '@/components/ui/Button';
 const steps = [
   {
     icon: BookOpen,
-    titleEn: 'Learn the Lao Alphabet',
-    titleFr: "Apprenez l'alphabet lao",
+    titleEn: 'Learn the Thai Alphabet',
+    titleFr: "Apprenez l'alphabet thaï",
     descEn: 'Master 33 consonants and 28 vowels with interactive cards, audio pronunciation, and tone class indicators.',
     descFr: 'Maîtrisez 33 consonnes et 28 voyelles avec des cartes interactives, la prononciation audio et les indicateurs de classe tonale.',
-    laoChar: 'ກ ຂ ຄ',
+    thaiChar: 'ກ ຂ ຄ',
     color: 'text-primary',
   },
   {
@@ -22,16 +22,16 @@ const steps = [
     titleFr: 'Enrichissez votre vocabulaire',
     descEn: 'Explore 200+ words across 13 categories — from greetings and numbers to food and transport.',
     descFr: 'Explorez plus de 200 mots dans 13 catégories — des salutations aux nombres, en passant par la nourriture et les transports.',
-    laoChar: 'ສະບາຍດີ',
+    thaiChar: 'ສະບາຍດີ',
     color: 'text-secondary',
   },
   {
     icon: Music,
     titleEn: 'Master the Tones',
     titleFr: 'Maîtrisez les tons',
-    descEn: 'Lao is a tonal language with 6 tones. Learn to distinguish and produce each one through practice.',
-    descFr: 'Le lao est une langue tonale avec 6 tons. Apprenez à distinguer et produire chacun par la pratique.',
-    laoChar: '˦ ˧ ˨',
+    descEn: 'Thai is a tonal language with 5 tones. Learn to distinguish and produce each one through practice.',
+    descFr: 'Le thaï est une langue tonale avec 5 tons. Apprenez à distinguer et produire chacun par la pratique.',
+    thaiChar: '˦ ˧ ˨',
     color: 'text-accent',
   },
   {
@@ -40,7 +40,7 @@ const steps = [
     titleFr: 'Suivez votre progression',
     descEn: 'Earn badges, maintain your learning streak, and take quizzes to test your knowledge.',
     descFr: 'Gagnez des badges, maintenez votre série d\'apprentissage et passez des quiz pour tester vos connaissances.',
-    laoChar: '🏆',
+    thaiChar: '🏆',
     color: 'text-primary',
   },
 ];
@@ -70,7 +70,7 @@ export default function OnboardingPage() {
   return (
     <>
       <Helmet>
-        <title>Welcome | Learn Lao</title>
+        <title>Welcome | Learn Thai</title>
       </Helmet>
 
       <div className="min-h-[80vh] flex flex-col items-center justify-center px-4 py-12 max-w-lg mx-auto">
@@ -99,7 +99,7 @@ export default function OnboardingPage() {
               <current.icon size={48} />
             </div>
 
-            <p className="font-lao text-4xl mb-4 text-primary">{current.laoChar}</p>
+            <p className="font-thai text-4xl mb-4 text-primary">{current.thaiChar}</p>
 
             <h2 className="font-serif text-2xl sm:text-3xl font-semibold mb-4">
               {lang === 'fr' ? current.titleFr : current.titleEn}

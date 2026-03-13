@@ -56,7 +56,7 @@ export function CharacterCard({
       )}
 
       <div className="text-center">
-        <p className="font-lao text-5xl mb-3 text-primary">{character}</p>
+        <p className="font-thai text-5xl mb-3 text-primary">{character}</p>
         <p className="text-lg font-medium mb-1">{romanization}</p>
         <p className="text-sm text-muted mb-3">{ipaSound}</p>
 
@@ -67,12 +67,12 @@ export function CharacterCard({
         )}
 
         <div className="flex items-center justify-center gap-2 mb-2">
-          <AudioPlayer src={audioFile} laoText={exampleWord || character} size="sm" />
+          <AudioPlayer src={audioFile} thaiText={exampleWord || character} size="sm" />
         </div>
 
         {exampleWord && (
           <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10">
-            <p className="font-lao text-lg">{exampleWord}</p>
+            <p className="font-thai text-lg">{exampleWord}</p>
             <p className="text-xs text-muted">{exampleTranslation}</p>
           </div>
         )}

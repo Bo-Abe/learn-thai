@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, RotateCcw, Check, X as XIcon } from 'lucide-react';
 import { vocabulary } from '@/data/vocabulary';
-import type { VocabCategory } from '@/types/lao';
+import type { VocabCategory } from '@/types/thai';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
@@ -54,7 +54,7 @@ export default function VocabularyPage() {
       const q = searchQuery.toLowerCase();
       result = result.filter(
         (w) =>
-          w.lao.includes(q) ||
+          w.thai.includes(q) ||
           w.romanization.toLowerCase().includes(q) ||
           w.translationEn.toLowerCase().includes(q) ||
           w.translationFr.toLowerCase().includes(q),
@@ -145,7 +145,7 @@ export default function VocabularyPage() {
               <Card variant="gold" hover={false} className="min-h-[200px] flex flex-col items-center justify-center text-center">
                 {!isFlipped ? (
                   <motion.div key="front" initial={{ rotateY: 90 }} animate={{ rotateY: 0 }}>
-                    <p className="font-lao text-5xl text-primary mb-4">{currentCard.lao}</p>
+                    <p className="font-thai text-5xl text-primary mb-4">{currentCard.thai}</p>
                     <p className="text-muted text-sm">{t('flashcard.flip')}</p>
                   </motion.div>
                 ) : (
@@ -154,10 +154,10 @@ export default function VocabularyPage() {
                     <p className="text-xl mb-2">
                       {isFr ? currentCard.translationFr : currentCard.translationEn}
                     </p>
-                    <AudioPlayer src={currentCard.audioFile} laoText={currentCard.lao} size="sm" />
+                    <AudioPlayer src={currentCard.audioFile} thaiText={currentCard.thai} size="sm" />
                     {currentCard.sentence && (
                       <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10 text-sm">
-                        <p className="font-lao">{currentCard.sentence.lao}</p>
+                        <p className="font-thai">{currentCard.sentence.thai}</p>
                         <p className="text-muted">
                           {isFr ? currentCard.sentence.translationFr : currentCard.sentence.translationEn}
                         </p>
@@ -210,7 +210,7 @@ export default function VocabularyPage() {
                       >
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-1">
-                            <span className="font-lao text-2xl text-primary">{word.lao}</span>
+                            <span className="font-thai text-2xl text-primary">{word.thai}</span>
                             {vocabularyLearned.includes(word.id) && (
                               <Check size={16} className="text-success" />
                             )}
@@ -225,7 +225,7 @@ export default function VocabularyPage() {
                             </Badge>
                           </div>
                         </div>
-                        <AudioPlayer src={word.audioFile} laoText={word.lao} size="sm" />
+                        <AudioPlayer src={word.audioFile} thaiText={word.thai} size="sm" />
                       </Card>
                     </motion.div>
                   ))}

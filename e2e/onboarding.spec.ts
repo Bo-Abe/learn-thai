@@ -3,13 +3,13 @@ import { test, expect } from '@playwright/test';
 test.describe('Onboarding Page', () => {
   test('loads onboarding page', async ({ page }) => {
     await page.goto('/onboarding');
-    await expect(page.locator('text=Learn the Lao Alphabet')).toBeVisible();
+    await expect(page.locator('text=Learn the Thai Alphabet')).toBeVisible();
   });
 
   test('can navigate through steps', async ({ page }) => {
     await page.goto('/onboarding');
     // Step 1
-    await expect(page.locator('text=Learn the Lao Alphabet')).toBeVisible();
+    await expect(page.locator('text=Learn the Thai Alphabet')).toBeVisible();
 
     // Click Next
     await page.locator('button:has-text("Next")').click();
@@ -28,7 +28,7 @@ test.describe('Onboarding Page', () => {
     await page.goto('/onboarding');
     await page.locator('button:has-text("Next")').click();
     await page.locator('button:has-text("Back")').click();
-    await expect(page.locator('text=Learn the Lao Alphabet')).toBeVisible();
+    await expect(page.locator('text=Learn the Thai Alphabet')).toBeVisible();
   });
 
   test('can skip tutorial', async ({ page }) => {

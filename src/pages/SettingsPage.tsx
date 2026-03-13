@@ -23,7 +23,7 @@ export default function SettingsPage() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'lao-learning-progress.json';
+    a.download = 'thai-learning-progress.json';
     a.click();
     URL.revokeObjectURL(url);
   };

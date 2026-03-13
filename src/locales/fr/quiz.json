@@ -1,25 +1,25 @@
 {
   "title": "Quiz",
-  "subtitle": "Testez vos connaissances en lao",
+  "subtitle": "Testez vos connaissances en thaï",
   "types": {
     "recognition": {
       "title": "Reconnaissance de caractères",
-      "desc": "Identifiez la bonne romanisation d'un caractère lao",
+      "desc": "Identifiez la bonne romanisation d'un caractère thaï",
       "instruction": "Quelle est la romanisation de ce caractère ?"
     },
     "listening": {
       "title": "Écoute",
       "desc": "Écoutez l'audio et sélectionnez le bon caractère",
-      "instruction": "Écoutez et sélectionnez le bon caractère lao"
+      "instruction": "Écoutez et sélectionnez le bon caractère thaï"
     },
     "writing": {
       "title": "Écriture",
-      "desc": "Tapez le bon caractère lao à partir de la romanisation",
-      "instruction": "Tapez le caractère lao pour cette romanisation"
+      "desc": "Tapez le bon caractère thaï à partir de la romanisation",
+      "instruction": "Tapez le caractère thaï pour cette romanisation"
     },
     "translation": {
       "title": "Traduction",
-      "desc": "Traduisez les mots lao en français",
+      "desc": "Traduisez les mots thaïs en français",
       "instruction": "Que signifie ce mot ?"
     }
   },

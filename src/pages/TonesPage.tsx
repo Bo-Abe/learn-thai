@@ -73,9 +73,9 @@ export default function TonesPage() {
                     <h3 className="font-semibold text-lg">
                       {isFr ? tone.nameFr : tone.nameEn}
                     </h3>
-                    <p className="font-lao text-sm text-muted">{tone.nameLao}</p>
+                    <p className="font-thai text-sm text-muted">{tone.nameThai}</p>
                   </div>
-                  <AudioPlayer src={tone.audioExample} laoText={tone.nameLao} size="sm" />
+                  <AudioPlayer src={tone.audioExample} thaiText={tone.nameThai} size="sm" />
                 </div>
 
                 <div className="flex items-center gap-4 mb-3">
@@ -103,14 +103,14 @@ export default function TonesPage() {
                     {tone.minimalPairs.map((pair, i) => (
                       <div key={i} className="flex gap-4 text-sm">
                         <div>
-                          <span className="font-lao text-primary">{pair.word1}</span>
+                          <span className="font-thai text-primary">{pair.word1}</span>
                           <span className="text-muted ml-2">
                             {isFr ? pair.meaning1Fr : pair.meaning1En}
                           </span>
                         </div>
                         <span className="text-muted">vs</span>
                         <div>
-                          <span className="font-lao text-accent">{pair.word2}</span>
+                          <span className="font-thai text-accent">{pair.word2}</span>
                           <span className="text-muted ml-2">
                             {isFr ? pair.meaning2Fr : pair.meaning2En}
                           </span>

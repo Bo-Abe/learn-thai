@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import { consonants } from '../consonants';
 
 describe('Consonants data', () => {
-  it('contains exactly 33 consonants', () => {
-    expect(consonants).toHaveLength(33);
+  it('contains exactly 44 consonants', () => {
+    expect(consonants).toHaveLength(44);
   });
 
   it('each consonant has all required fields', () => {
@@ -32,7 +32,7 @@ describe('Consonants data', () => {
     expect(classes.has('low')).toBe(true);
   });
 
-  it('each character is valid Lao script', () => {
+  it('each character is valid Thai script', () => {
     consonants.forEach((c) => {
       expect(c.character.length).toBeGreaterThan(0);
     });

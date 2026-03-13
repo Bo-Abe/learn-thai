@@ -12,7 +12,7 @@ function LoadingFallback() {
   return (
     <div className="flex items-center justify-center min-h-[60vh]">
       <div className="text-center">
-        <div className="font-lao text-4xl text-primary animate-pulse mb-4">ລາວ</div>
+        <div className="font-thai text-4xl text-primary animate-pulse mb-4">ລາວ</div>
         <p className="text-muted">{t('loading')}</p>
       </div>
     </div>
@@ -24,7 +24,7 @@ const isSidebar = showAds && adsConfig.placement === 'sidebar';
 
 export function Layout() {
   return (
-    <div className="min-h-screen flex flex-col lao-pattern">
+    <div className="min-h-screen flex flex-col thai-pattern">
       <Header />
 
       {/* Top ad banner (always shown in 'top' mode, or mobile fallback in 'sidebar' mode) */}

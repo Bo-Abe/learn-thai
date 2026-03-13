@@ -1,25 +1,25 @@
 {
   "title": "Quiz",
-  "subtitle": "Test your Lao language knowledge",
+  "subtitle": "Test your Thai language knowledge",
   "types": {
     "recognition": {
       "title": "Character Recognition",
-      "desc": "Identify the correct romanization for a Lao character",
+      "desc": "Identify the correct romanization for a Thai character",
       "instruction": "What is the romanization of this character?"
     },
     "listening": {
       "title": "Listening",
       "desc": "Listen to the audio and select the correct character",
-      "instruction": "Listen and select the correct Lao character"
+      "instruction": "Listen and select the correct Thai character"
     },
     "writing": {
       "title": "Writing",
-      "desc": "Type the correct Lao character from the romanization",
-      "instruction": "Type the Lao character for this romanization"
+      "desc": "Type the correct Thai character from the romanization",
+      "instruction": "Type the Thai character for this romanization"
     },
     "translation": {
       "title": "Translation",
-      "desc": "Translate Lao words to English",
+      "desc": "Translate Thai words to English",
       "instruction": "What does this word mean?"
     }
   },

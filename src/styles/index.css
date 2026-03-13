@@ -20,7 +20,7 @@
   --color-error: #CC1016;
   --color-blue-glow: rgba(10, 102, 194, 0.12);
 
-  --font-lao: "Noto Sans Lao", sans-serif;
+  --font-thai: "Noto Sans Thai", sans-serif;
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Outfit", sans-serif;
 }
@@ -40,8 +40,8 @@
     color: var(--color-text-light);
   }
 
-  .font-lao {
-    font-family: var(--font-lao);
+  .font-thai {
+    font-family: var(--font-thai);
   }
 
   .font-serif {
@@ -82,7 +82,7 @@
   backdrop-filter: blur(12px);
 }
 
-.lao-pattern {
+.thai-pattern {
   /* subtle dot pattern inspired by LinkedIn's clean background */
   background-image: radial-gradient(circle, rgba(10, 102, 194, 0.04) 1px, transparent 1px);
   background-size: 24px 24px;

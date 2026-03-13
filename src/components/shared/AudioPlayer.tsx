@@ -4,7 +4,7 @@ import { useAudio } from '@/context/AudioContext';
 
 interface AudioPlayerProps {
   src: string;
-  laoText?: string;
+  thaiText?: string;
   size?: 'sm' | 'md' | 'lg';
   className?: string;
 }
@@ -21,17 +21,17 @@ const buttonSizeMap = {
   lg: 'p-3',
 };
 
-export function AudioPlayer({ src, laoText, size = 'md', className = '' }: AudioPlayerProps) {
+export function AudioPlayer({ src, thaiText, size = 'md', className = '' }: AudioPlayerProps) {
   const { t } = useTranslation('common');
   const { play, speak, stop, isPlaying, currentFile } = useAudio();
-  const identifier = laoText || src;
+  const identifier = thaiText || src;
   const isCurrentlyPlaying = isPlaying && currentFile === identifier;
 
   const handleClick = () => {
     if (isCurrentlyPlaying) {
       stop();
-    } else if (laoText) {
-      speak(laoText);
+    } else if (thaiText) {
+      speak(thaiText);
     } else {
       play(src);
     }

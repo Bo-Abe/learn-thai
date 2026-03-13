@@ -58,7 +58,7 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>{t('common:appName')} — {t('common:appNameLao')}</title>
+        <title>{t('common:appName')} — {t('common:appNameThai')}</title>
         <meta name="description" content={t('hero.subtitle')} />
       </Helmet>
 
@@ -72,12 +72,12 @@ export default function HomePage() {
             className="text-center max-w-3xl mx-auto"
           >
             <motion.h1
-              className="font-lao text-5xl sm:text-7xl text-primary mb-4"
+              className="font-thai text-5xl sm:text-7xl text-primary mb-4"
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              {t('hero.titleLao')}
+              {t('hero.titleThai')}
             </motion.h1>
             <h2 className="font-serif text-3xl sm:text-4xl font-semibold mb-6">
               {t('hero.title')}
@@ -175,7 +175,7 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* Why Learn Lao */}
+      {/* Why Learn Thai */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.h2
           initial={{ opacity: 0 }}

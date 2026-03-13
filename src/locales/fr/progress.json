@@ -1,6 +1,6 @@
 {
   "title": "Votre progression",
-  "subtitle": "Suivez votre parcours d'apprentissage du lao",
+  "subtitle": "Suivez votre parcours d'apprentissage du thaï",
   "overview": {
     "title": "Vue d'ensemble",
     "consonantsMastered": "Consonnes maîtrisées",
@@ -34,9 +34,9 @@
     "firstLesson": "Première leçon",
     "firstLessonDesc": "A terminé sa première leçon",
     "consonantMaster": "Maître des consonnes",
-    "consonantMasterDesc": "A appris les 33 consonnes",
+    "consonantMasterDesc": "A appris les 44 consonnes",
     "vowelMaster": "Maître des voyelles",
-    "vowelMasterDesc": "A appris les 28 voyelles",
+    "vowelMasterDesc": "A appris les 30 voyelles",
     "quizWhiz": "As du quiz",
     "quizWhizDesc": "A obtenu 100 % à un quiz",
     "weekStreak": "Guerrier de la semaine",

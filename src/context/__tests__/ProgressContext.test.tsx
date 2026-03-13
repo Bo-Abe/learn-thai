@@ -88,7 +88,7 @@ describe('ProgressContext', () => {
   it('saves progress to localStorage', () => {
     const { result } = renderHook(() => useProgress(), { wrapper });
     act(() => result.current.learnConsonant('c01'));
-    const stored = localStorage.getItem('lao_learning_progress');
+    const stored = localStorage.getItem('thai_learning_progress');
     expect(stored).toBeTruthy();
     const parsed = JSON.parse(stored!);
     expect(parsed.consonantsLearned).toContain('c01');

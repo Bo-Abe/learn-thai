@@ -1,6 +1,6 @@
 {
   "title": "Your Progress",
-  "subtitle": "Track your Lao learning journey",
+  "subtitle": "Track your Thai learning journey",
   "overview": {
     "title": "Overview",
     "consonantsMastered": "Consonants mastered",
@@ -34,9 +34,9 @@
     "firstLesson": "First Lesson",
     "firstLessonDesc": "Completed your first lesson",
     "consonantMaster": "Consonant Master",
-    "consonantMasterDesc": "Learned all 33 consonants",
+    "consonantMasterDesc": "Learned all 44 consonants",
     "vowelMaster": "Vowel Master",
-    "vowelMasterDesc": "Learned all 28 vowels",
+    "vowelMasterDesc": "Learned all 30 vowels",
     "quizWhiz": "Quiz Whiz",
     "quizWhizDesc": "Scored 100% on a quiz",
     "weekStreak": "Week Warrior",

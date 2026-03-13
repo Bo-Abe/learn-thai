@@ -14,7 +14,7 @@ const defaultProps = {
 };
 
 describe('CharacterCard', () => {
-  it('renders the Lao character and romanization', () => {
+  it('renders the Thai character and romanization', () => {
     render(<CharacterCard {...defaultProps} />);
     expect(screen.getByText('ກ')).toBeInTheDocument();
     expect(screen.getByText('ko')).toBeInTheDocument();

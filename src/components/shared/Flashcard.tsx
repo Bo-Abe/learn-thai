@@ -7,12 +7,12 @@ interface FlashcardProps {
   front: React.ReactNode;
   back: React.ReactNode;
   audioFile?: string;
-  laoText?: string;
+  thaiText?: string;
   onFlip?: (isFlipped: boolean) => void;
   className?: string;
 }
 
-export function Flashcard({ front, back, audioFile, laoText, onFlip, className = '' }: FlashcardProps) {
+export function Flashcard({ front, back, audioFile, thaiText, onFlip, className = '' }: FlashcardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const { play: playAudio, speak } = useAudio();
 
@@ -25,16 +25,16 @@ export function Flashcard({ front, back, audioFile, laoText, onFlip, className =
   const handleAudio = useCallback(
     (e: React.MouseEvent) => {
       e.stopPropagation();
-      if (laoText) {
-        speak(laoText);
+      if (thaiText) {
+        speak(thaiText);
       } else if (audioFile) {
         playAudio(audioFile);
       }
     },
-    [laoText, audioFile, speak, playAudio],
+    [thaiText, audioFile, speak, playAudio],
   );
 
-  const hasAudio = !!(laoText || audioFile);
+  const hasAudio = !!(thaiText || audioFile);
 
   return (
     <div className={`perspective-[1000px] ${className}`} style={{ perspective: '1000px' }}>

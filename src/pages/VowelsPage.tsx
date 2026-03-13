@@ -100,7 +100,7 @@ export default function VowelsPage() {
                     onClick={() => isLearned ? unlearnVowel(v.id) : learnVowel(v.id)}
                     className="text-center"
                   >
-                    <p className="font-lao text-4xl text-primary mb-2">{v.symbol}</p>
+                    <p className="font-thai text-4xl text-primary mb-2">{v.symbol}</p>
                     <p className="text-sm font-medium mb-1">{v.romanization}</p>
                     <p className="text-xs text-muted mb-2">{v.ipaSound}</p>
 
@@ -113,10 +113,10 @@ export default function VowelsPage() {
                       </Badge>
                     </div>
 
-                    <AudioPlayer src={v.audioFile} laoText={v.exampleWord || v.symbol} size="sm" />
+                    <AudioPlayer src={v.audioFile} thaiText={v.exampleWord || v.symbol} size="sm" />
 
                     <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10">
-                      <p className="font-lao text-lg">{v.exampleWord}</p>
+                      <p className="font-thai text-lg">{v.exampleWord}</p>
                       <p className="text-xs text-muted">{getTranslation(v)}</p>
                     </div>
                   </Card>

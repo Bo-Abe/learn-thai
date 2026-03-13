@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import { vowels } from '../vowels';
 
 describe('Vowels data', () => {
-  it('contains 27 vowels', () => {
-    expect(vowels).toHaveLength(27);
+  it('contains 30 vowels', () => {
+    expect(vowels).toHaveLength(30);
   });
 
   it('each vowel has all required fields', () => {

@@ -1,6 +1,6 @@
 {
-  "appName": "Apprendre le Lao",
-  "appNameLao": "ຮຽນພາສາລາວ",
+  "appName": "Apprendre le thaï",
+  "appNameThai": "เรียนภาษาไทย",
   "nav": {
     "home": "Accueil",
     "alphabet": "Alphabet",
@@ -59,8 +59,8 @@
     "openMenu": "Ouvrir le menu"
   },
   "footer": {
-    "madeWith": "Fait avec amour pour les apprenants de la langue lao",
-    "copyright": "© 2024 Apprendre le Lao"
+    "madeWith": "Fait avec amour pour les apprenants de la langue thaïe",
+    "copyright": "© 2024 Apprendre le thaï"
   },
   "loading": "Chargement...",
   "error": {

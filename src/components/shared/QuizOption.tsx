@@ -51,7 +51,7 @@ export function QuizOption({
       `}
     >
       <div>
-        <span className="font-lao text-lg">{label}</span>
+        <span className="font-thai text-lg">{label}</span>
         {sublabel && <span className="block text-sm text-muted mt-0.5">{sublabel}</span>}
       </div>
       {isRevealed && isCorrect === true && <Check size={20} className="text-success flex-shrink-0" />}

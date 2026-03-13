@@ -8,7 +8,7 @@ interface AudioState {
   speed: AudioSpeed;
   autoplay: boolean;
   speechSupported: boolean;
-  laoVoiceAvailable: boolean;
+  thaiVoiceAvailable: boolean;
 }
 
 type AudioAction =
@@ -16,7 +16,7 @@ type AudioAction =
   | { type: 'STOP' }
   | { type: 'SET_SPEED'; payload: AudioSpeed }
   | { type: 'TOGGLE_AUTOPLAY' }
-  | { type: 'SET_SPEECH_SUPPORT'; payload: { speechSupported: boolean; laoVoiceAvailable: boolean } };
+  | { type: 'SET_SPEECH_SUPPORT'; payload: { speechSupported: boolean; thaiVoiceAvailable: boolean } };
 
 interface AudioContextType extends AudioState {
   play: (file: string) => void;
@@ -47,14 +47,14 @@ function audioReducer(state: AudioState, action: AudioAction): AudioState {
   }
 }
 
-function findLaoVoice(): SpeechSynthesisVoice | null {
+function findThaiVoice(): SpeechSynthesisVoice | null {
   if (typeof speechSynthesis === 'undefined') return null;
   const voices = speechSynthesis.getVoices();
-  const laoVoice = voices.find((v) => v.lang.startsWith('lo'));
-  if (laoVoice) return laoVoice;
-  // Thai is closely related and may pronounce Lao text acceptably
   const thaiVoice = voices.find((v) => v.lang.startsWith('th'));
-  return thaiVoice || null;
+  if (thaiVoice) return thaiVoice;
+  // Lao is closely related and may pronounce Thai text acceptably
+  const laoVoice = voices.find((v) => v.lang.startsWith('lo'));
+  return laoVoice || null;
 }
 
 export function AudioProvider({ children }: { children: ReactNode }) {
@@ -64,7 +64,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
     speed: 1,
     autoplay: false,
     speechSupported: false,
-    laoVoiceAvailable: false,
+    thaiVoiceAvailable: false,
   });
 
   const speedRef = useRef(state.speed);
@@ -73,15 +73,15 @@ export function AudioProvider({ children }: { children: ReactNode }) {
   // Detect speech synthesis support and available voices
   useEffect(() => {
     if (typeof speechSynthesis === 'undefined') {
-      dispatch({ type: 'SET_SPEECH_SUPPORT', payload: { speechSupported: false, laoVoiceAvailable: false } });
+      dispatch({ type: 'SET_SPEECH_SUPPORT', payload: { speechSupported: false, thaiVoiceAvailable: false } });
       return;
     }
 
     const checkVoices = () => {
-      const voice = findLaoVoice();
+      const voice = findThaiVoice();
       dispatch({
         type: 'SET_SPEECH_SUPPORT',
-        payload: { speechSupported: true, laoVoiceAvailable: !!voice },
+        payload: { speechSupported: true, thaiVoiceAvailable: !!voice },
       });
     };
 
@@ -112,12 +112,12 @@ export function AudioProvider({ children }: { children: ReactNode }) {
       }
 
       const utterance = new SpeechSynthesisUtterance(text);
-      const voice = findLaoVoice();
+      const voice = findThaiVoice();
       if (voice) {
         utterance.voice = voice;
         utterance.lang = voice.lang;
       } else {
-        utterance.lang = 'lo-LA';
+        utterance.lang = 'th-TH';
       }
       utterance.rate = speedRef.current;
 

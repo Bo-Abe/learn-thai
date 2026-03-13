@@ -121,7 +121,7 @@ export default function ProgressPage() {
                   animate={{ scale: 1 }}
                   className="flex items-center gap-2 bg-error/10 border border-error/20 rounded-xl px-4 py-2"
                 >
-                  <span className="font-lao text-2xl">{char}</span>
+                  <span className="font-thai text-2xl">{char}</span>
                   <Badge variant="error" size="sm">{count}x</Badge>
                 </motion.div>
               ))}

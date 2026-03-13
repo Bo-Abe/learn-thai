@@ -54,12 +54,12 @@ test.describe('Learning Flow', () => {
   test('language switching works', async ({ page }) => {
     await page.goto('/');
     // Should be in English by default
-    await expect(page.locator('text=Learn Lao')).toBeVisible();
+    await expect(page.locator('text=Learn Thai')).toBeVisible();
     // Click FR language switcher
     const frButton = page.locator('button:has-text("FR")').first();
     if (await frButton.isVisible()) {
       await frButton.click();
-      await expect(page.locator('text=Apprendre le Lao')).toBeVisible();
+      await expect(page.locator('text=Apprendre le Thaï')).toBeVisible();
     }
   });
 });

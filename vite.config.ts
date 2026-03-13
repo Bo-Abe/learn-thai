@@ -12,9 +12,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'ຮຽນພາສາລາວ — Learn Lao',
-        short_name: 'Learn Lao',
-        description: 'Interactive app to learn reading and writing Lao language',
+        name: 'เรียนภาษาไทย — Learn Thai',
+        short_name: 'Learn Thai',
+        description: 'Interactive app to learn reading and writing Thai language',
         theme_color: '#C9A84C',
         background_color: '#0F0F0F',
         display: 'standalone',

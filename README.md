@@ -1,6 +1,6 @@
-# ຮຽນພາສາລາວ — Learn Lao
+# เรียนภาษาไทย — Learn Thai
 
-An interactive web application for learning the Lao language, featuring alphabet lessons, vocabulary drills, quizzes, writing practice, and progress tracking — all wrapped in a modern, accessible UI.
+An interactive web application for learning the Thai language, featuring alphabet lessons, vocabulary drills, quizzes, writing practice, and progress tracking — all wrapped in a modern, accessible UI.
 
 ## Quick Start
 
@@ -12,8 +12,8 @@ An interactive web application for learning the Lao language, featuring alphabet
 ### Installation
 
 ```bash
-git clone <repo-url> learn-lao
-cd learn-lao
+git clone <repo-url> learn-thai
+cd learn-thai
 npm install
 ```
 
@@ -28,7 +28,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 ## Project Structure
 
 ```
-learn-lao/
+learn-thai/
 ├── public/                  # Static assets
 ├── src/
 │   ├── assets/              # Images, audio, fonts

@@ -12,7 +12,7 @@ import { QuizOption } from '@/components/shared/QuizOption';
 import { AudioPlayer } from '@/components/shared/AudioPlayer';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { useProgress } from '@/context/ProgressContext';
-import type { QuizResult } from '@/types/lao';
+import type { QuizResult } from '@/types/thai';
 
 type QuizType = 'recognition' | 'listening' | 'writing' | 'translation';
 type QuizState = 'select' | 'playing' | 'result';
@@ -21,7 +21,7 @@ interface Question {
   id: string;
   prompt: string;
   promptAudio?: string;
-  promptLaoText?: string;
+  promptThaiText?: string;
   correctAnswer: string;
   options: string[];
   explanation: string;
@@ -62,7 +62,7 @@ function generateListeningQuestions(count: number): Question[] {
       id: c.id,
       prompt: c.romanization,
       promptAudio: c.audioFile,
-      promptLaoText: c.exampleWord || c.character,
+      promptThaiText: c.exampleWord || c.character,
       correctAnswer: c.character,
       options: shuffleArray([c.character, ...wrongOptions]),
       explanation: `${c.romanization} → ${c.character}`,
@@ -81,10 +81,10 @@ function generateTranslationQuestions(count: number, isFr: boolean): Question[] 
     ).slice(0, 3);
     return {
       id: w.id,
-      prompt: w.lao,
+      prompt: w.thai,
       correctAnswer: translation,
       options: shuffleArray([translation, ...wrongOptions]),
-      explanation: `${w.lao} (${w.romanization}) = ${translation}`,
+      explanation: `${w.thai} (${w.romanization}) = ${translation}`,
     };
   });
 }
@@ -250,10 +250,10 @@ export default function QuizPage() {
                 <div className="text-center mb-8">
                   {quizType === 'listening' && currentQuestion.promptAudio && (
                     <div className="mb-4">
-                      <AudioPlayer src={currentQuestion.promptAudio} laoText={currentQuestion.promptLaoText} size="lg" />
+                      <AudioPlayer src={currentQuestion.promptAudio} thaiText={currentQuestion.promptThaiText} size="lg" />
                     </div>
                   )}
-                  <p className="font-lao text-5xl text-primary mb-2">{currentQuestion.prompt}</p>
+                  <p className="font-thai text-5xl text-primary mb-2">{currentQuestion.prompt}</p>
                   <p className="text-sm text-muted">
                     {t(`types.${quizType}.instruction`)}
                   </p>

@@ -1,8 +1,8 @@
 {
   "hero": {
-    "title": "Learn to Read & Write Lao",
-    "titleLao": "ຮຽນພາສາລາວ",
-    "subtitle": "Master the beautiful Lao script through interactive lessons, quizzes, and writing practice",
+    "title": "Learn to Read & Write Thai",
+    "titleThai": "เรียนภาษาไทย",
+    "subtitle": "Master the beautiful Thai script through interactive lessons, quizzes, and writing practice",
     "cta": "Start Learning",
     "ctaSecondary": "Continue Learning"
   },
@@ -10,19 +10,19 @@
     "title": "Learning Modules",
     "consonants": {
       "title": "Consonants",
-      "desc": "Learn the 33 consonants of the Lao alphabet with audio pronunciation"
+      "desc": "Learn the 44 consonants of the Thai alphabet with audio pronunciation"
     },
     "vowels": {
       "title": "Vowels",
-      "desc": "Master the 28 vowels and their positions around consonants"
+      "desc": "Master the 30 vowels and their positions around consonants"
     },
     "tones": {
       "title": "Tones",
-      "desc": "Understand the 6 tones that give Lao its melodic quality"
+      "desc": "Understand the 5 tones that give Thai its melodic quality"
     },
     "vocabulary": {
       "title": "Vocabulary",
-      "desc": "Build your word bank with 200+ essential Lao words"
+      "desc": "Build your word bank with 200+ essential Thai words"
     },
     "quiz": {
       "title": "Quiz",
@@ -30,7 +30,7 @@
     },
     "writing": {
       "title": "Writing Practice",
-      "desc": "Practice writing Lao characters with guided stroke order"
+      "desc": "Practice writing Thai characters with guided stroke order"
     },
     "flashcards": {
       "title": "Flashcards",
@@ -38,22 +38,22 @@
     }
   },
   "why": {
-    "title": "Why Learn Lao?",
+    "title": "Why Learn Thai?",
     "reason1": {
       "title": "Rich Cultural Heritage",
-      "desc": "Lao language opens the door to a vibrant culture shaped by Buddhism, ancient traditions, and warm hospitality."
+      "desc": "Thai language opens the door to a vibrant culture shaped by Buddhism, ancient traditions, and warm hospitality."
     },
     "reason2": {
       "title": "Travel with Confidence",
-      "desc": "Navigate Laos like a local — read menus, signs, and connect with people in their native tongue."
+      "desc": "Navigate Thailand like a local — read menus, signs, and connect with people in their native tongue."
     },
     "reason3": {
       "title": "Unique Writing System",
-      "desc": "The elegant Lao script, derived from ancient Khmer, is a beautiful and rewarding system to learn."
+      "desc": "The elegant Thai script, derived from ancient Khmer, is a beautiful and rewarding system to learn."
     },
     "reason4": {
       "title": "Gateway to Southeast Asia",
-      "desc": "Lao shares roots with Thai, giving you a foundation to explore multiple languages in the region."
+      "desc": "Thai shares roots with Lao, giving you a foundation to explore multiple languages in the region."
     }
   },
   "stats": {

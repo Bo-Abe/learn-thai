@@ -1,7 +1,7 @@
 import { createContext, useContext, useReducer, useEffect, type ReactNode } from 'react';
-import type { UserProgress, QuizResult } from '@/types/lao';
+import type { UserProgress, QuizResult } from '@/types/thai';
 
-const STORAGE_KEY = 'lao_learning_progress';
+const STORAGE_KEY = 'thai_learning_progress';
 
 const defaultProgress: UserProgress = {
   consonantsLearned: [],
@@ -120,8 +120,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   }, [state]);
 
   const overallPercentage = Math.round(
-    ((state.consonantsLearned.length / 33 +
-      state.vowelsLearned.length / 27 +
+    ((state.consonantsLearned.length / 44 +
+      state.vowelsLearned.length / 30 +
       state.vocabularyLearned.length / 200) /
       3) *
       100,

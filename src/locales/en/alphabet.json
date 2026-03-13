@@ -1,7 +1,7 @@
 {
   "consonants": {
-    "title": "Lao Consonants",
-    "subtitle": "Master the 33 consonants of the Lao alphabet",
+    "title": "Thai Consonants",
+    "subtitle": "Master the 44 consonants of the Thai alphabet",
     "filter": {
       "all": "All classes",
       "high": "High class",
@@ -25,8 +25,8 @@
     "markUnlearned": "Mark as not learned"
   },
   "vowels": {
-    "title": "Lao Vowels",
-    "subtitle": "Learn the 28 vowels and their positions",
+    "title": "Thai Vowels",
+    "subtitle": "Learn the 30 vowels and their positions",
     "filter": {
       "all": "All vowels",
       "short": "Short vowels",
@@ -55,9 +55,9 @@
     "progress": "{{learned}} of {{total}} learned"
   },
   "tones": {
-    "title": "Lao Tones",
-    "subtitle": "Understand the 6 tones of the Lao language",
-    "description": "Lao is a tonal language where the pitch pattern of a syllable changes its meaning. The tone of a syllable depends on the consonant class, vowel length, and tone mark.",
+    "title": "Thai Tones",
+    "subtitle": "Understand the 5 tones of the Thai language",
+    "description": "Thai is a tonal language where the pitch pattern of a syllable changes its meaning. The tone of a syllable depends on the consonant class, vowel length, and tone mark.",
     "tone": "Tone",
     "marker": "Marker",
     "contour": "Contour",
@@ -71,8 +71,8 @@
       "description": "The resulting tone depends on the consonant class and tone mark",
       "consonantClass": "Consonant class",
       "noMark": "No mark",
-      "maiEk": "Mai ek (່)",
-      "maiTho": "Mai tho (້)"
+      "maiEk": "Mai ek (่)",
+      "maiTho": "Mai tho (้)"
     },
     "exercise": {
       "title": "Tone Listening Exercise",
@@ -82,9 +82,9 @@
     }
   },
   "numbers": {
-    "title": "Lao Numbers",
-    "subtitle": "Learn the Lao numeral system",
-    "laoNumeral": "Lao numeral",
+    "title": "Thai Numbers",
+    "subtitle": "Learn the Thai numeral system",
+    "thaiNumeral": "Thai numeral",
     "arabicNumeral": "Arabic numeral"
   }
 }

@@ -37,7 +37,7 @@ export default function WritingPage() {
 
     // Guide character
     if (showGuide) {
-      ctx.font = '200px "Noto Sans Lao"';
+      ctx.font = '200px "Noto Sans Thai"';
       ctx.fillStyle = 'rgba(201, 168, 76, 0.1)';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
@@ -127,7 +127,7 @@ export default function WritingPage() {
                 <button
                   key={c.id}
                   onClick={() => { setSelectedChar(c); clearCanvas(); }}
-                  className={`p-2 rounded-lg font-lao text-2xl transition-all ${
+                  className={`p-2 rounded-lg font-thai text-2xl transition-all ${
                     selectedChar.id === c.id
                       ? 'bg-primary text-bg-dark shadow-gold'
                       : 'bg-black/5 dark:bg-white/5 hover:bg-black/5 dark:hover:bg-white/10'
@@ -145,7 +145,7 @@ export default function WritingPage() {
               {/* Target character display */}
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  <span className="font-lao text-4xl text-primary">{selectedChar.character}</span>
+                  <span className="font-thai text-4xl text-primary">{selectedChar.character}</span>
                   <div>
                     <p className="font-medium">{selectedChar.romanization}</p>
                     <p className="text-xs text-muted">{selectedChar.ipaSound}</p>
@@ -198,7 +198,7 @@ export default function WritingPage() {
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
                     <p className="text-xs text-muted mb-2">{t('compare.target')}</p>
-                    <p className="font-lao text-6xl text-primary">{selectedChar.character}</p>
+                    <p className="font-thai text-6xl text-primary">{selectedChar.character}</p>
                   </div>
                   <div>
                     <p className="text-xs text-muted mb-2">{t('compare.yours')}</p>

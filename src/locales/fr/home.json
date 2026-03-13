@@ -1,8 +1,8 @@
 {
   "hero": {
-    "title": "Apprenez à lire et écrire le Lao",
-    "titleLao": "ຮຽນພາສາລາວ",
-    "subtitle": "Maîtrisez la belle écriture lao grâce à des leçons interactives, des quiz et des exercices d'écriture",
+    "title": "Apprenez à lire et écrire le thaï",
+    "titleThai": "เรียนภาษาไทย",
+    "subtitle": "Maîtrisez la belle écriture thaïe grâce à des leçons interactives, des quiz et des exercices d'écriture",
     "cta": "Commencer l'apprentissage",
     "ctaSecondary": "Continuer l'apprentissage"
   },
@@ -10,19 +10,19 @@
     "title": "Modules d'apprentissage",
     "consonants": {
       "title": "Consonnes",
-      "desc": "Apprenez les 33 consonnes de l'alphabet lao avec prononciation audio"
+      "desc": "Apprenez les 44 consonnes de l'alphabet thaï avec prononciation audio"
     },
     "vowels": {
       "title": "Voyelles",
-      "desc": "Maîtrisez les 28 voyelles et leurs positions autour des consonnes"
+      "desc": "Maîtrisez les 30 voyelles et leurs positions autour des consonnes"
     },
     "tones": {
       "title": "Tons",
-      "desc": "Comprenez les 6 tons qui donnent au lao sa qualité mélodique"
+      "desc": "Comprenez les 5 tons qui donnent au thaï sa qualité mélodique"
     },
     "vocabulary": {
       "title": "Vocabulaire",
-      "desc": "Enrichissez votre vocabulaire avec plus de 200 mots lao essentiels"
+      "desc": "Enrichissez votre vocabulaire avec plus de 200 mots thaïs essentiels"
     },
     "quiz": {
       "title": "Quiz",
@@ -30,7 +30,7 @@
     },
     "writing": {
       "title": "Exercice d'écriture",
-      "desc": "Pratiquez l'écriture des caractères lao avec un guide de tracé"
+      "desc": "Pratiquez l'écriture des caractères thaïs avec un guide de tracé"
     },
     "flashcards": {
       "title": "Cartes mémoire",
@@ -38,22 +38,22 @@
     }
   },
   "why": {
-    "title": "Pourquoi apprendre le lao ?",
+    "title": "Pourquoi apprendre le thaï ?",
     "reason1": {
       "title": "Riche patrimoine culturel",
-      "desc": "La langue lao ouvre la porte à une culture vibrante façonnée par le bouddhisme, les traditions anciennes et une hospitalité chaleureuse."
+      "desc": "La langue thaïe ouvre la porte à une culture vibrante façonnée par le bouddhisme, les traditions anciennes et une hospitalité chaleureuse."
     },
     "reason2": {
       "title": "Voyagez en confiance",
-      "desc": "Parcourez le Laos comme un local — lisez les menus, les panneaux et connectez-vous avec les gens dans leur langue maternelle."
+      "desc": "Parcourez la Thaïlande comme un local — lisez les menus, les panneaux et connectez-vous avec les gens dans leur langue maternelle."
     },
     "reason3": {
       "title": "Système d'écriture unique",
-      "desc": "L'élégante écriture lao, dérivée de l'ancien khmer, est un système beau et gratifiant à apprendre."
+      "desc": "L'élégante écriture thaïe, dérivée de l'ancien khmer, est un système beau et gratifiant à apprendre."
     },
     "reason4": {
       "title": "Porte d'entrée vers l'Asie du Sud-Est",
-      "desc": "Le lao partage des racines avec le thaï, vous donnant une base pour explorer plusieurs langues de la région."
+      "desc": "Le thaï partage des racines avec le lao, vous donnant une base pour explorer plusieurs langues de la région."
     }
   },
   "stats": {

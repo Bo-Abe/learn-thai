@@ -31,7 +31,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-              <span className="font-lao text-sm text-white font-bold">ລາວ</span>
+              <span className="font-thai text-sm text-white font-bold">ລາວ</span>
             </div>
             <span className="font-sans text-base font-semibold hidden sm:block">{t('appName')}</span>
           </Link>

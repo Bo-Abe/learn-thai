@@ -9,7 +9,7 @@ describe('Vocabulary data', () => {
   it('each word has all required fields', () => {
     vocabulary.forEach((w) => {
       expect(w.id).toBeDefined();
-      expect(w.lao).toBeDefined();
+      expect(w.thai).toBeDefined();
       expect(w.romanization).toBeDefined();
       expect(w.translationFr).toBeDefined();
       expect(w.translationEn).toBeDefined();

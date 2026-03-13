@@ -10,7 +10,7 @@ import { Flashcard } from '@/components/shared/Flashcard';
 import { consonants } from '@/data/consonants';
 import { vocabulary } from '@/data/vocabulary';
 import { useProgress } from '@/context/ProgressContext';
-import type { VocabCategory } from '@/types/lao';
+import type { VocabCategory } from '@/types/thai';
 
 type FlashcardMode = 'consonants' | 'vocabulary';
 
@@ -86,7 +86,7 @@ export default function FlashcardsPage() {
     const c = currentItem as typeof consonants[0];
     return (
       <div className="text-center">
-        <p className="font-lao text-7xl mb-4 text-primary">{c.character}</p>
+        <p className="font-thai text-7xl mb-4 text-primary">{c.character}</p>
         <p className="text-muted text-sm">Tap to reveal</p>
       </div>
     );
@@ -96,7 +96,7 @@ export default function FlashcardsPage() {
     const c = currentItem as typeof consonants[0];
     return (
       <div className="text-center">
-        <p className="font-lao text-5xl mb-3 text-primary">{c.character}</p>
+        <p className="font-thai text-5xl mb-3 text-primary">{c.character}</p>
         <p className="text-xl font-semibold mb-1">{c.romanization}</p>
         <p className="text-sm text-muted mb-2">{c.ipaSound}</p>
         <Badge variant={c.class === 'high' ? 'accent' : c.class === 'mid' ? 'primary' : 'secondary'} size="sm">
@@ -104,7 +104,7 @@ export default function FlashcardsPage() {
         </Badge>
         {c.exampleWord && (
           <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10">
-            <p className="font-lao text-lg">{c.exampleWord}</p>
+            <p className="font-thai text-lg">{c.exampleWord}</p>
             <p className="text-xs text-muted">
               {lang === 'fr' ? c.exampleTranslationFr : c.exampleTranslationEn}
             </p>
@@ -118,7 +118,7 @@ export default function FlashcardsPage() {
     const w = currentItem as typeof vocabulary[0];
     return (
       <div className="text-center">
-        <p className="font-lao text-5xl mb-4 text-primary">{w.lao}</p>
+        <p className="font-thai text-5xl mb-4 text-primary">{w.thai}</p>
         <p className="text-muted text-sm">Tap to reveal</p>
       </div>
     );
@@ -128,7 +128,7 @@ export default function FlashcardsPage() {
     const w = currentItem as typeof vocabulary[0];
     return (
       <div className="text-center">
-        <p className="font-lao text-4xl mb-2 text-primary">{w.lao}</p>
+        <p className="font-thai text-4xl mb-2 text-primary">{w.thai}</p>
         <p className="text-lg font-semibold mb-1">{w.romanization}</p>
         <p className="text-base mb-2">
           {lang === 'fr' ? w.translationFr : w.translationEn}
@@ -138,7 +138,7 @@ export default function FlashcardsPage() {
         </Badge>
         {w.sentence && (
           <div className="mt-3 pt-3 border-t border-black/10 dark:border-white/10 text-sm">
-            <p className="font-lao">{w.sentence.lao}</p>
+            <p className="font-thai">{w.sentence.thai}</p>
             <p className="text-muted">
               {lang === 'fr' ? w.sentence.translationFr : w.sentence.translationEn}
             </p>
@@ -159,8 +159,8 @@ export default function FlashcardsPage() {
           <h1 className="font-serif text-3xl sm:text-4xl font-semibold mb-2">Flashcards</h1>
           <p className="text-muted">
             {mode === 'consonants'
-              ? lang === 'fr' ? 'Révisez les consonnes lao' : 'Review Lao consonants'
-              : lang === 'fr' ? 'Révisez le vocabulaire lao' : 'Review Lao vocabulary'}
+              ? lang === 'fr' ? 'Révisez les consonnes thaïes' : 'Review Thai consonants'
+              : lang === 'fr' ? 'Révisez le vocabulaire thaï' : 'Review Thai vocabulary'}
           </p>
         </div>
 
@@ -236,9 +236,9 @@ export default function FlashcardsPage() {
               front={mode === 'consonants' ? renderConsonantFront() : renderVocabFront()}
               back={mode === 'consonants' ? renderConsonantBack() : renderVocabBack()}
               audioFile={'audioFile' in currentItem ? currentItem.audioFile : undefined}
-              laoText={mode === 'consonants'
+              thaiText={mode === 'consonants'
                 ? (currentItem as typeof consonants[0]).exampleWord || (currentItem as typeof consonants[0]).character
-                : (currentItem as typeof vocabulary[0]).lao}
+                : (currentItem as typeof vocabulary[0]).thai}
               className="mb-6"
             />
           </motion.div>
